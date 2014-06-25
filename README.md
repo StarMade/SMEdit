@@ -1,4 +1,4 @@
 SMEdit
 ======
 
-SMEdit at it's glory.
+Brand new re-coded SMEdit.
