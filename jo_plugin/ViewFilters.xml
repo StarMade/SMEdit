@@ -1,0 +1,72 @@
+<filters author="Jo Jaquinta">
+    <filter title="All" description="Show all blocks" priority="10">
+        <block id=""/>
+    </filter>
+    <filter title="Power/Both" description="View power and tank blocks only" priority="20">
+        <block type="POWER_COIL_ID"/>
+        <block type="POWER_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Power/Power" description="View power blocks only" priority="21">
+        <block type="POWER_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Power/Power Tank" description="View power tank blocks only" priority="21">
+        <block type="POWER_COIL_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Antimater Cannon" description="View antimatter cannons blocks only" priority="21">
+        <block type="WEAPON_CONTROLLER_ID"/>
+        <block type="WEAPON_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Shields" description="View shield blocks" priority="21">
+        <block type="SHIELD_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Thruster" description="View thuster blocks" priority="21">
+        <block type="THRUSTER_ID"/>
+        <block type="COIL_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Salvage" description="View salvage blocks" priority="21">
+        <block type="SALVAGE_CONTROLLER_ID"/>
+        <block type="CORE_ID"/>
+        <block type="SALVAGE_ID"/>
+    </filter>
+    <filter title="Repair" description="View repair blocks" priority="21">
+        <block type="REPAIR_CONTROLLER_ID"/>
+        <block type="REPAIR_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Pulse" description="View pulse blocks" priority="21">
+        <block type="PULSE_CONTROLLER_ID"/>
+        <block type="PULSE_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Power Supply" description="View power supply blocks" priority="21">
+        <block type="POWER_SUPPLY_BEAM_COMPUTER"/>
+        <block type="POWER_SUPPLY_BEAM_MODULE"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Power Drain" description="View power drain blocks" priority="21">
+        <block type="POWER_DRAIN_BEAM_COMPUTER"/>
+        <block type="POWER_DRAIN_BEAM_MODULE"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Missile/Dumb" description="View dumb missile blocks" priority="21">
+        <block type="MISSILE_DUMB_CONTROLLER_ID"/>
+        <block type="MISSILE_DUMB_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Missile/Heat" description="View heat missile blocks" priority="21">
+        <block type="MISSILE_HEAT_CONTROLLER_ID"/>
+        <block type="MISSILE_HEAT_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+    <filter title="Missile/FAFO" description="View FAFO missile blocks" priority="21">
+        <block type="MISSILE_FAFO_CONTROLLER_ID"/>
+        <block type="MISSILE_FAFO_ID"/>
+        <block type="CORE_ID"/>
+    </filter>
+</filters>

@@ -1,0 +1,300 @@
+<blockMap default="HULL_COLOR_GREY_ID">
+	<block mcBlock="Air" smBlock="-1"/> <!-- Air = Air -->
+	<block mcBlock="1" smBlock="5"/> <!-- Stone = Grey Hull -->
+	<block mcBlock="2" smBlock="83"/> <!-- Grass = Grass Planet Terrain -->
+	<block mcBlock="3" mcData="0" smBlock="87"/> <!-- Dirt = Soil -->
+	<block mcBlock="3" mcData="1" smBlock="87"/> <!-- Dirt, no grass = Soil -->
+	<block mcBlock="3" mcData="2" smBlock="87"/> <!-- Podzol = Soil -->
+	<block mcBlock="4" smBlock="263"/> <!-- Cobblestone = H. Grey Hull -->
+	<block mcBlock="5" mcData="0" smBlock="287"/> <!-- Oak Wood Planks = Redwood -->
+	<block mcBlock="5" mcData="1" smBlock="287"/> <!-- Spruce Wood Planks = Redwood -->
+	<block mcBlock="5" mcData="2" smBlock="287"/> <!-- Birch Wood Planks = Redwood -->
+	<block mcBlock="5" mcData="3" smBlock="287"/> <!-- Jungle Wood Planks = Redwood -->
+	<block mcBlock="6" mcData="0" smBlock="95"/> <!-- Oak Sapling = Brown Patch -->
+	<block mcBlock="6" mcData="1" smBlock="95"/> <!-- Spruce Sapling = Brown Patch -->
+	<block mcBlock="6" mcData="2" smBlock="100"/> <!-- Birch Sapling = Tall Mushroom -->
+	<block mcBlock="6" mcData="3" smBlock="100"/> <!-- Jungle Sapling = Tall Mushroom -->
+	<block mcBlock="7" smBlock="73"/> <!-- Bedrock = Rock -->
+	<block mcBlock="8" smBlock="86"/> <!-- Water = Water -->
+	<block mcBlock="9" smBlock="86"/> <!-- Stationary Water = Water -->
+	<block mcBlock="10" smBlock="80"/> <!-- Lava = Lava -->
+	<block mcBlock="11" smBlock="80"/> <!-- Stationary Lava = Lava -->
+	<block mcBlock="12" smBlock="74"/> <!-- Sand = Sand -->
+	<block mcBlock="13" smBlock="139"/> <!-- Gravel = Rock -->
+	<block mcBlock="14" smBlock="184"/> <!-- Gold Ore = Negacide L4 -->
+	<block mcBlock="15" smBlock="191"/> <!-- Iron Ore = Negagate L3 -->
+	<block mcBlock="16" smBlock="150"/> <!-- Coal Ore = Quantagen L2 -->
+	<block mcBlock="17" mcData="0" smBlock="84"/> <!-- Oak Wood = Wood -->
+	<block mcBlock="17" mcData="1" smBlock="84"/> <!-- Spruce Wood = Wood -->
+	<block mcBlock="17" mcData="2" smBlock="276"/> <!-- Birch Wood = Ice Wood -->
+	<block mcBlock="17" mcData="3" smBlock="276"/> <!-- Jungle Wood = Ice Wood -->
+	<block mcBlock="18" mcData="0" smBlock="85"/> <!-- Oak Leaves = Foliage -->
+	<block mcBlock="18" mcData="1" smBlock="85"/> <!-- Spruce Leaves = Foliage -->
+	<block mcBlock="18" mcData="2" smBlock="277"/> <!-- Birch Leaves = Ice Leaves -->
+	<block mcBlock="18" mcData="3" smBlock="277"/> <!-- Jungle Leaves = Ice Leaves -->
+	<block mcBlock="19" smBlock="90"/> <!-- Sponge = Purple Stuff -->
+	<block mcBlock="20" smBlock="63"/> <!-- Glass = Plex Glass -->
+	<block mcBlock="21" smBlock="146"/> <!-- Lapis Ore = Octogen L2 -->
+	<block mcBlock="22" smBlock="267"/> <!-- Lapis Block = H. Blue Hull -->
+	<block mcBlock="23" smBlock="339"/> <!-- Dispenser = decorative panel 4 -->
+	<block mcBlock="24" mcData="0" smBlock="79"/> <!-- Sandstone = Soil -->
+	<block mcBlock="24" mcData="1" smBlock="270"/> <!-- Chiseled Sandstone = Soil -->
+	<block mcBlock="24" mcData="2" smBlock="270"/> <!-- Smooth Sandstone = Soil -->
+	<block mcBlock="25" smBlock="336"/> <!-- Note Block = decorative panel 1 -->
+	<block mcBlock="26" smBlock="120"/> <!-- bed block = PlexStorage -->
+	<block mcBlock="27" smBlock="-1"/> <!-- Powered Rail = Air -->
+	<block mcBlock="28" smBlock="-1"/> <!-- Detector Rail = Air -->
+	<block mcBlock="29" smBlock="-1"/> <!-- Sticky Piston = Air -->
+	<block mcBlock="30" smBlock="340"/> <!-- Web = Hanging Light Yellow -->
+	<block mcBlock="31" mcData="0" smBlock="93"/> <!-- Grass = Grass Patch -->
+	<block mcBlock="31" mcData="1" smBlock="106"/> <!-- Fern = Tall Flowers -->
+	<block mcBlock="32" smBlock="99"/> <!-- Dead Shrub = Long Weed -->
+	<block mcBlock="33" smBlock="337"/> <!-- Piston = decorative panel 2 -->
+	<block mcBlock="34" smBlock="-1"/> <!-- Piston Head = Air -->
+	<block mcBlock="35" mcData="0" smBlock="271"/> <!-- White Wool = H. White Hull -->
+	<block mcBlock="35" mcData="1" smBlock="70"/> <!-- Orange Wool = Brown Hull -->
+	<block mcBlock="35" mcData="2" smBlock="69"/> <!-- Magenta Wool = Purple Hull -->
+	<block mcBlock="35" mcData="3" smBlock="77"/> <!-- Light Blue Wool = Blue Hull -->
+	<block mcBlock="35" mcData="4" smBlock="79"/> <!-- Yellow Wool = Yellow Hull -->
+	<block mcBlock="35" mcData="5" smBlock="78"/> <!-- Lime Wool = Green Hull -->
+	<block mcBlock="35" mcData="6" smBlock="76"/> <!-- Pink Wool = Red Hull -->
+	<block mcBlock="35" mcData="7" smBlock="263"/> <!-- Gray Wool = H. Grey Hull -->
+	<block mcBlock="35" mcData="8" smBlock="5"/> <!-- Light Gray Wool = Grey Hull -->
+	<block mcBlock="35" mcData="9" smBlock="267"/> <!-- Cyan Wool = H. Blue Hull -->
+	<block mcBlock="35" mcData="10" smBlock="266"/> <!-- Purple Wool = H. Purple Hull -->
+	<block mcBlock="35" mcData="11" smBlock="267"/> <!-- Blue Wool = H. Blue Hull -->
+	<block mcBlock="35" mcData="12" smBlock="269"/> <!-- Brown Wool = H. Brown Hull -->
+	<block mcBlock="35" mcData="13" smBlock="268"/> <!-- Green Wool = H. Green Hull -->
+	<block mcBlock="35" mcData="14" smBlock="265"/> <!-- Red Wool = H. Red Hull -->
+	<block mcBlock="35" mcData="15" smBlock="264"/> <!-- Black Wool = H. Black Hull -->
+	<block mcBlock="36" smBlock="-1"/> <!-- Piston Moving = Air -->
+	<block mcBlock="37" smBlock="98"/> <!-- Dandelion = Grass Flowers -->
+	<block mcBlock="38" mcData="0" smBlock="109"/> <!-- Poppy = Yhole -->
+	<block mcBlock="38" mcData="1" smBlock="95"/> <!-- Blue Orchid = Brown Patch -->
+	<block mcBlock="38" mcData="2" smBlock="95"/> <!-- Allium = Brown Patch -->
+	<block mcBlock="38" mcData="4" smBlock="102"/> <!-- Red Tulip = Tall Grass Flowers -->
+	<block mcBlock="38" mcData="5" smBlock="102"/> <!-- Orange Tulip = Tall Grass Flowers -->
+	<block mcBlock="38" mcData="6" smBlock="102"/> <!-- White Tulip = Tall Grass Flowers -->
+	<block mcBlock="38" mcData="7" smBlock="102"/> <!-- Pink Tulip = Tall Grass Flowers -->
+	<block mcBlock="38" mcData="8" smBlock="108"/> <!-- Oxeye Daisy = Alien Flowers -->
+	<block mcBlock="39" smBlock="100"/> <!-- Brown Mushroom = Tall Shroom -->
+	<block mcBlock="40" smBlock="104"/> <!-- Red Mushroom = Red Shroom -->
+	<block mcBlock="41" smBlock="270"/> <!-- Gold Block = hard yellow hull -->
+	<block mcBlock="42" smBlock="271"/> <!-- Iron Block = white hull -->
+	<block mcBlock="43" mcData="0" smBlock="81"/> <!-- Double Stone Slab = white -->
+	<block mcBlock="43" mcData="1" smBlock="79"/> <!-- Double Sandstone Slab = Yellow Hull -->
+	<block mcBlock="43" mcData="2" smBlock="70"/> <!-- Double Wooden Slab = Brown Hull -->
+	<block mcBlock="43" mcData="3" smBlock="263"/> <!-- Double Cobblestone Slab = H. Grey Hull -->
+	<block mcBlock="43" mcData="4" smBlock="76"/> <!-- Double Brick Slab = Red Hull -->
+	<block mcBlock="43" mcData="5" smBlock="263"/> <!-- Double Stone Brick Slab = H. Grey Hull -->
+	<block mcBlock="43" mcData="6" smBlock="265"/> <!-- Double Nether Brick Slab = H. Red Hull -->
+	<block mcBlock="43" mcData="7" smBlock="81"/> <!-- Double Quartz Slab = White Hull -->
+	<block mcBlock="43" mcData="8" smBlock="271"/> <!-- Smooth Stone Slab = h white -->
+	<block mcBlock="43" mcData="9" smBlock="79"/> <!-- Smooth Sandstone Slab = yellow hull -->
+	<block mcBlock="44" mcData="0" smBlock="81"/> <!-- Stone Slab = Air -->
+	<block mcBlock="44" mcData="1" smBlock="79"/> <!-- Sandstone Slab = Air -->
+	<block mcBlock="44" mcData="2" smBlock="70"/> <!-- Wooden Slab = Air -->
+	<block mcBlock="44" mcData="3" smBlock="263"/> <!-- Cobblestone Slab = Air -->
+	<block mcBlock="44" mcData="4" smBlock="76"/> <!-- Brick Slab = Air -->
+	<block mcBlock="44" mcData="5" smBlock="263"/> <!-- Stone Brick Slab = Air -->
+	<block mcBlock="44" mcData="6" smBlock="265"/> <!-- Nether Brick Slab = Air -->
+	<block mcBlock="44" mcData="7" smBlock="81"/> <!-- Quartz Slab = Air -->
+	<block mcBlock="45" smBlock="76"/> <!-- Brick = Red Hull -->
+	<block mcBlock="46" smBlock="14"/> <!-- TNT = Dis-Integrator -->
+	<block mcBlock="47" smBlock="337"/> <!-- Bookshelf = decorative panel 2 -->
+	<block mcBlock="48" smBlock="92"/> <!-- Mossy Cobblestone = Purple Vine Stuff -->
+	<block mcBlock="49" smBlock="264"/> <!-- Obsidian = H. Black Hull -->
+	<block mcBlock="50" smBlock="55"/> <!-- Torch = plex light -->
+	<block mcBlock="51" smBlock="-1"/> <!-- Fire = Air -->
+	<block mcBlock="52" smBlock="338"/> <!-- Monster Spawner = decorative panel 3 -->
+	<block mcBlock="53" smBlock="293"/> <!-- Oak Wood Stairs = Grey Hull Wedge -->
+	<block mcBlock="54" smBlock="120"/> <!-- Chest = PlexStorage -->
+	<block mcBlock="55" smBlock="-1"/> <!-- Redstone Wire = Air -->
+	<block mcBlock="56" smBlock="167"/> <!-- Diamond Ore = Succumite L3 -->
+	<block mcBlock="57" smBlock="286"/> <!-- Block of Diamond = Ice Crystal -->
+	<block mcBlock="58" smBlock="337"/> <!-- Workbench = decorative panel 2 -->
+	<block mcBlock="59" smBlock="96"/> <!-- Wheat, crop = Mars Tentacles -->
+	<block mcBlock="60" smBlock="87"/> <!-- farmland = Soil -->
+	<block mcBlock="61" smBlock="338"/> <!-- furnace = decorative panel 3 -->
+	<block mcBlock="62" smBlock="338"/> <!-- furnace, smelting = decorative panel 3 -->
+	<block mcBlock="63" smBlock="-1"/> <!-- Sign = Air -->
+	<block mcBlock="64" smBlock="122"/> <!-- Wood Door = PlexDoor -->
+	<block mcBlock="65" smBlock="-1"/> <!-- Ladder = Air -->
+	<block mcBlock="66" smBlock="-1"/> <!-- Rail = Air -->
+	<block mcBlock="67" smBlock="293"/> <!-- Cobblestone Stairs = Grey Hull Wedge -->
+	<block mcBlock="68" smBlock="-1"/> <!-- Sign, wall mounted = Air -->
+	<block mcBlock="69" smBlock="-1"/> <!-- Lever = Air -->
+	<block mcBlock="70" smBlock="-1"/> <!-- Stone Pressure Plate = Air -->
+	<block mcBlock="71" smBlock="122"/> <!-- Iron Door = PlexDoor -->
+	<block mcBlock="72" smBlock="-1"/> <!-- Wooden Pressure Plate = Air -->
+	<block mcBlock="73" smBlock="171"/> <!-- Redstone Ore = Cenomite L3 -->
+	<block mcBlock="74" smBlock="171"/> <!-- Redstone Ore, glowing plate = Cenomite L3 -->
+	<block mcBlock="75" smBlock="55"/> <!-- Redstone Torch, off = Air -->
+	<block mcBlock="76" smBlock="55"/> <!-- Redstone Torch, on = Air -->
+	<block mcBlock="77" smBlock="-1"/> <!-- Button, stone = Air -->
+	<block mcBlock="78" smBlock="275"/> <!-- Snow = ICE PLANET ROCK -->
+	<block mcBlock="79" smBlock="86"/> <!-- Ice = Water -->
+	<block mcBlock="80" smBlock="274"/> <!-- Snow Block = ICE PLANET SURFACE -->
+	<block mcBlock="81" smBlock="89"/> <!-- Cactus = Cactus -->
+	<block mcBlock="82" smBlock="64"/> <!-- Clay Block = Ice -->
+	<block mcBlock="83" smBlock="97"/> <!-- Sugar Cane, block = Alien Vine -->
+	<block mcBlock="83" smBlock="339"/> <!-- Jukebox = decorative panel 4 -->
+	<block mcBlock="84" smBlock="-1"/> <!-- Fence = Air -->
+	<block mcBlock="85" smBlock="103"/> <!-- Pumpkin = Mini Cactus -->
+	<block mcBlock="87" smBlock="90"/> <!-- Netherrack = Purple Top Stuff -->
+	<block mcBlock="88" smBlock="91"/> <!-- Soul Sand = Purple Rock Stuff -->
+	<block mcBlock="89" smBlock="286"/> <!-- Glowstone = Ice Crystal -->
+	<block mcBlock="90" smBlock="-1"/> <!-- Portal = Air -->
+	<block mcBlock="91" smBlock="87"/> <!-- Jack-O-Lantern = Soil -->
+	<block mcBlock="92" smBlock="-1"/> <!-- Cake = Air - because the Cake IS a Lie!! -->
+	<block mcBlock="93" smBlock="-1"/> <!-- Redstone Repeater, off = Air -->
+	<block mcBlock="94" smBlock="-1"/> <!-- Redstone Repeater, on = Air -->
+	<block mcBlock="95" mcData="0" smBlock="63"/> <!-- Stained Glass, white = H. White Hull -->
+	<block mcBlock="95" mcData="1" smBlock="63"/> <!-- Stained Glass, orange = Brown Hull -->
+	<block mcBlock="95" mcData="2" smBlock="63"/> <!-- Stained Glass, magenta = Purple Hull -->
+	<block mcBlock="95" mcData="3" smBlock="63"/> <!-- Stained Glass, light blue = Blue Hull -->
+	<block mcBlock="95" mcData="4" smBlock="63"/> <!-- Stained Glass, yellow = Yellow Hull -->
+	<block mcBlock="95" mcData="5" smBlock="63"/> <!-- Stained Glass, lime = Green Hull -->
+	<block mcBlock="95" mcData="6" smBlock="63"/> <!-- Stained Glass, pink = Red Hull -->
+	<block mcBlock="95" mcData="7" smBlock="63"/> <!-- Stained Glass, grey = H. Grey Hull -->
+	<block mcBlock="95" mcData="8" smBlock="63"/> <!-- Stained Glass, light grey = Grey Hull -->
+	<block mcBlock="95" mcData="9" smBlock="63"/> <!-- Stained Glass, cyan = H. Blue Hull -->
+	<block mcBlock="95" mcData="10" smBlock="63"/> <!-- Stained Glass, purple = H. Purple Hull -->
+	<block mcBlock="95" mcData="11" smBlock="63"/> <!-- Stained Glass, blue = H. Blue Hull -->
+	<block mcBlock="95" mcData="12" smBlock="63"/> <!-- Stained Glass, brown = H. Brown Hull -->
+	<block mcBlock="95" mcData="13" smBlock="63"/> <!-- Stained Glass, green = H. Green Hull -->
+	<block mcBlock="95" mcData="14" smBlock="63"/> <!-- Stained Glass, red = H. Red Hull -->
+	<block mcBlock="95" mcData="15" smBlock="63"/> <!-- Stained Glass, black = H. Black Hull -->
+	<block mcBlock="96" smBlock="122"/> <!-- Trapdoor = Plexdoor -->
+	<block mcBlock="97" mcData="0" smBlock="5"/> <!-- Monster Stone = Grey Hull -->
+	<block mcBlock="97" mcData="1" smBlock="5"/> <!-- Monster Stone, cobble = Grey Hull -->
+	<block mcBlock="97" mcData="2" smBlock="5"/> <!-- Monster Stone, stone brick = Grey Hull -->
+	<block mcBlock="97" mcData="3" smBlock="5"/> <!-- Monster Stone, mossy brick = Grey Hull -->
+	<block mcBlock="97" mcData="4" smBlock="5"/> <!-- Monster Stone, cracked = Grey Hull -->
+	<block mcBlock="97" mcData="5" smBlock="5"/> <!-- Monster Stone, chiseled = Grey Hull -->
+	<block mcBlock="98" mcData="0" smBlock="263"/> <!-- Stone Bricks = H. Grey Hull -->
+	<block mcBlock="98" mcData="1" smBlock="268"/> <!-- Mossy Stone Bricks = H Green Hull -->
+	<block mcBlock="98" mcData="2" smBlock="5"/> <!-- Cracked Bricks = Grey Hull -->
+	<block mcBlock="98" mcData="3" smBlock="263"/> <!-- Chiseled Bricks = H. Grey Hull -->
+	<block mcBlock="99" smBlock="-1"/> <!-- Huge Brown Mushroom = Air -->
+	<block mcBlock="100" smBlock="-1"/> <!-- Huge Red Mushroom = Air -->
+	<block mcBlock="101" smBlock="122"/> <!-- Iron Bars = PlexDoor -->
+	<block mcBlock="102" smBlock="63"/> <!-- Glass Pane = Water -->
+	<block mcBlock="103" smBlock="107"/> <!-- Melon, block = Stone Fragment -->
+	<block mcBlock="104" smBlock="105"/> <!-- Pumpkin Vine = Purptacles -->
+	<block mcBlock="105" smBlock="105"/> <!-- Melon Vine = Purptacles -->
+	<block mcBlock="106" smBlock="-1"/> <!-- Vines = Air -->
+	<block mcBlock="107" smBlock="-1"/> <!-- Fence Gate = Air -->
+	<block mcBlock="108" smBlock="297"/> <!-- Brick Stairs = Red Hull Wedge -->
+	<block mcBlock="109" smBlock="311"/> <!-- Stone Brick Stairs = Grey Hull Wedge -->
+	<block mcBlock="110" smBlock="87"/> <!-- Mycelium = Soil -->
+	<block mcBlock="111" smBlock="-1"/> <!-- Lily Pad = Air -->
+	<block mcBlock="112" smBlock="70"/> <!-- Nether Brick = Soil -->
+	<block mcBlock="113" smBlock="-1"/> <!-- Nether Brick Fence = Air -->
+	<block mcBlock="114" smBlock="295"/> <!-- Nether Brick Stairs = Soil -->
+	<block mcBlock="115" smBlock="109"/> <!-- Nether Wart = Yhole -->
+	<block mcBlock="116" smBlock="337"/> <!-- Enchantment Table = decorative panel 2 -->
+	<block mcBlock="117" smBlock="339"/> <!-- Brewing Stand, block = decorative panel 4 -->
+	<block mcBlock="118" smBlock="339"/> <!-- Cauldron, block = decorative panel 4 -->
+	<block mcBlock="119" smBlock="-1"/> <!-- End Portal = Air -->
+	<block mcBlock="120" smBlock="55"/> <!-- End Portal Frame = PlexLight -->
+	<block mcBlock="121" smBlock="271"/> <!-- End Stone = H. White Hull -->
+	<block mcBlock="122" smBlock="-1"/> <!-- Dragon Egg = Air -->
+	<block mcBlock="123" smBlock="282"/> <!-- Redstone Lamp, off = PlexLight -->
+	<block mcBlock="124" smBlock="282"/> <!-- Redstone Lamp, on = PlexLight -->
+	<block mcBlock="125" mcData="0" smBlock="70"/> <!-- Double Oak Slab = Brown Hull -->
+	<block mcBlock="125" mcData="1" smBlock="70"/> <!-- Double Spruce Slab = Brown Hull -->
+	<block mcBlock="125" mcData="2" smBlock="70"/> <!-- Double Birch Slab = Brown Hull -->
+	<block mcBlock="125" mcData="3" smBlock="70"/> <!-- Double Jungle Slab = Brown Hull -->
+	<block mcBlock="126" mcData="0" smBlock="70"/> <!-- Oak Wood Slab = Air -->
+	<block mcBlock="126" mcData="1" smBlock="70"/> <!-- Spruce Wood Slab = Air -->
+	<block mcBlock="126" mcData="2" smBlock="70"/> <!-- Birch Wood Slab = Air -->
+	<block mcBlock="126" mcData="3" smBlock="70"/> <!-- Jungle Wood Slab = Air -->
+	<block mcBlock="127" smBlock="-1"/> <!-- Cocoa Plant = Air -->
+	<block mcBlock="128" smBlock="300"/> <!-- Sandstone Stairs = Yellow Hull Wedge -->
+	<block mcBlock="129" smBlock="188"/> <!-- Emerald Ore = Quantacide L4 -->
+	<block mcBlock="130" smBlock="120"/> <!-- Ender Chest = PlexStorage -->
+	<block mcBlock="131" smBlock="-1"/> <!-- Tripwire Hook = Air -->
+	<block mcBlock="132" smBlock="-1"/> <!-- Tripwire = Air -->
+	<block mcBlock="133" smBlock="284"/> <!-- Emerald Block = Green Light -->
+	<block mcBlock="134" smBlock="295"/> <!-- Spruce Wooden Stairs = Brown Hull Wedge -->
+	<block mcBlock="135" smBlock="295"/> <!-- Birch Wooden Stairs = Brown Hull Wedge -->
+	<block mcBlock="136" smBlock="295"/> <!-- Jungle Wooden Stairs = Brown Hull Wedge -->
+	<block mcBlock="137" smBlock="336"/> <!-- Command Block = decorative panel 1 -->
+	<block mcBlock="138" smBlock="62"/> <!-- Beacon = PlexBeacon -->
+	<block mcBlock="139" mcData="0" smBlock="5"/> <!-- Cobblestone Wall = Grey Hull -->
+	<block mcBlock="139" mcData="1" smBlock="78"/> <!-- Mossy Cobblestone Wall = Grey Hull -->
+	<block mcBlock="140" smBlock="-1"/> <!-- Flower Pot = Air -->
+	<block mcBlock="141" smBlock="-1"/> <!-- Carrot, crop = Air -->
+	<block mcBlock="142" smBlock="-1"/> <!-- Potatoes, crop = Air -->
+	<block mcBlock="143" smBlock="-1"/> <!-- Button, wood = Air -->
+	<block mcBlock="144" mcData="0" smBlock="-1"/> <!-- Head Block, skeleton = Air -->
+	<block mcBlock="144" mcData="1" smBlock="-1"/> <!-- Head Block, wither = Air -->
+	<block mcBlock="144" mcData="2" smBlock="-1"/> <!-- Head Block, zombie = Air -->
+	<block mcBlock="144" mcData="3" smBlock="-1"/> <!-- Head Block, steve = Air -->
+	<block mcBlock="144" mcData="4" smBlock="-1"/> <!-- Head Block, creeper = Air -->
+	<block mcBlock="145" mcData="0" smBlock="-1"/> <!-- Anvil = Air -->
+	<block mcBlock="145" mcData="1" smBlock="-1"/> <!-- Anvil, slight damage = Air -->
+	<block mcBlock="145" mcData="2" smBlock="-1"/> <!-- Anvil, very damaged = Air -->
+	<block mcBlock="146" smBlock="120"/> <!-- Trapped Chest = PlexDoor -->
+	<block mcBlock="147" smBlock="-1"/> <!-- Weighted Pressure Plate, light = Air -->
+	<block mcBlock="148" smBlock="-1"/> <!-- Weighted Pressure Plate, heavy = Air -->
+	<block mcBlock="149" smBlock="-1"/> <!-- Redstone Comparator, off = Air -->
+	<block mcBlock="150" smBlock="-1"/> <!-- Redstone Comparator, on = Air -->
+	<block mcBlock="151" smBlock="-1"/> <!-- Daylight Sensor = Air -->
+	<block mcBlock="152" smBlock="282"/> <!-- Block of Redstone = Red light -->
+	<block mcBlock="153" smBlock="191"/> <!-- Nether Quartz Ore = Negagate L3 -->
+	<block mcBlock="154" smBlock="336"/> <!-- Hopper = decorative panel 1 -->
+	<block mcBlock="155" mcData="0" smBlock="271"/> <!-- Quartz Block = H. White Hull -->
+	<block mcBlock="155" mcData="1" smBlock="271"/> <!-- Chiseled Quartz Block = H. White Hull -->
+	<block mcBlock="155" mcData="2" smBlock="271"/> <!-- Pillar Quartz Block = H. White Hull -->
+	<block mcBlock="156" smBlock="319"/> <!-- Quartz Stairs = H. White Wedge -->
+	<block mcBlock="157" smBlock="-1"/> <!-- Rail, Activator = Air -->
+	<block mcBlock="158" smBlock="339"/> <!-- Dropper = decorative panel 4 -->
+	<block mcBlock="159" mcData="0" smBlock="271"/> <!-- Stained Clay, white = Soil -->
+	<block mcBlock="159" mcData="1" smBlock="70"/> <!-- Stained Clay, orange = Soil -->
+	<block mcBlock="159" mcData="2" smBlock="69"/> <!-- Stained Clay, magenta = Soil -->
+	<block mcBlock="159" mcData="3" smBlock="77"/> <!-- Stained Clay, light blue = Soil -->
+	<block mcBlock="159" mcData="4" smBlock="79"/> <!-- Stained Clay, yellow = Soil -->
+	<block mcBlock="159" mcData="5" smBlock="78"/> <!-- Stained Clay, lime = Soil -->
+	<block mcBlock="159" mcData="6" smBlock="76"/> <!-- Stained Clay, pink = Soil -->
+	<block mcBlock="159" mcData="7" smBlock="263"/> <!-- Stained Clay, grey = Soil -->
+	<block mcBlock="159" mcData="8" smBlock="5"/> <!-- Stained Clay, light grey = Soil -->
+	<block mcBlock="159" mcData="9" smBlock="267"/> <!-- Stained Clay, cyan = Soil -->
+	<block mcBlock="159" mcData="10" smBlock="266"/> <!-- Stained Clay, purple = Soil -->
+	<block mcBlock="159" mcData="11" smBlock="267"/> <!-- Stained Clay, blue = Soil -->
+	<block mcBlock="159" mcData="12" smBlock="269"/> <!-- Stained Clay, brown = Soil -->
+	<block mcBlock="159" mcData="13" smBlock="268"/> <!-- Stained Clay, green = Soil -->
+	<block mcBlock="159" mcData="14" smBlock="265"/> <!-- Stained Clay, red = Soil -->
+	<block mcBlock="159" mcData="15" smBlock="264"/> <!-- Stained Clay, black = Soil -->
+	<block mcBlock="170" smBlock="-1"/> <!-- Hay Bale = Air -->
+	<block mcBlock="171" mcData="0" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="1" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="2" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="3" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="4" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="5" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="6" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="7" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="8" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="9" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="10" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="11" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="12" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="13" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="14" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="171" mcData="15" smBlock="-1"/> <!-- Carpet, = Air -->
+	<block mcBlock="172" smBlock="269"/> <!-- Hardened Clay = H. Brown Hull -->
+	<block mcBlock="173" smBlock="264"/> <!-- Block of Coal = H. Black Hull -->
+	<block mcBlock="174" smBlock="64"/> <!-- Packed Ice = Ice -->
+	<block mcBlock="175" mcData="0" smBlock="109"/> <!-- Sunflower = Yhole -->
+	<block mcBlock="175" mcData="1" smBlock="101"/> <!-- Lilac = Purspire -->
+	<block mcBlock="175" mcData="2" smBlock="102"/> <!-- Double Tallgrass = Tall Grass Flowers -->
+	<block mcBlock="175" mcData="3" smBlock="103"/> <!-- Large Fern = Mini Cactus -->
+	<block mcBlock="175" mcData="4" smBlock="97"/> <!-- Rose Bush = Alien Vine -->
+	<block mcBlock="175" mcData="5" smBlock="107"/> <!-- Peony = Stone Fragment -->
+	<block mcBlock="389" smBlock="-1"/> <!-- Item Frame = Air -->
+	<block mcBlock="321" smBlock="-1"/> <!-- Painting = Air -->
+</blockMap>
+<!-- Created for SMedit users by Tomino Sama of the Mushroom Fleet! -->
+<!-- http://www.mushroomfleet.co.uk -->

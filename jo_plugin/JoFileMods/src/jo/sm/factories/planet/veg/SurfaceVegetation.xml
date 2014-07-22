@@ -1,0 +1,18 @@
+<vegetations author="Jo Jaquinta">
+    <vegetation title="Vegetation/Mars Like" description="Mars like material" priority="10" density="100">
+        <vegetable type="TERRAIN_MARSTENTACLES_SPRITE" percent="10"/>
+        <vegetable type="TERRAIN_REDSHROOM_SPRITE" percent="10"/>
+        <vegetable type="TERRAIN_CACTUS_ID" percent="10"/>
+    </vegetation>
+    <vegetation title="Vegetation/Water Planet" description="Watery" priority="10" density="400">
+        <vegetable type="TERRAIN_PURPLE_ALIEN_VINE" percent="10"/>
+        <vegetable type="TERRAIN_BROWNWEED_SPRITE" percent="10"/>
+    </vegetation>
+    <vegetation title="Vegetation/Icy" description="Ice Planet" priority="10" density="50">
+        <vegetable type="TERRAIN_ICEPLANET_CRYSTAL" percent="10"/>
+        <vegetable type="TERRAIN_ICEPLANET_SPIKE_SPRITE" percent="10"/>
+        <vegetable type="TERRAIN_ICEPLANET_ICECRAG_SPRITE" percent="10"/>
+        <vegetable type="TERRAIN_ICEPLANET_ICECORAL_SPRITE" percent="10"/>
+        <vegetable type="TERRAIN_ICEPLANET_ICEGRASS_SPRITE" percent="10"/>
+    </vegetation>
+</vegetations>

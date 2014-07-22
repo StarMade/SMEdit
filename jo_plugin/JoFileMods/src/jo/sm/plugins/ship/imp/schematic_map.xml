@@ -1,0 +1,451 @@
+<blockMap default="HULL_COLOR_GREY_ID">
+    <block mcBlock="Air" smBlock="-1"/>
+    <block mcBlock="Stone" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Stone" mcData="1" smBlock="HULL_COLOR_RED_ID"/>
+    <block mcBlock="Stone" mcData="2" smBlock="HULL_COLOR_RED_ID"/>
+    <block mcBlock="Stone" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Stone" mcData="4" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Stone" mcData="5" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Stone" mcData="6" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Grass" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Dirt" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Dirt" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Dirt" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Cobblestone" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenPlank" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenPlank" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenPlank" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenPlank" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenPlank" mcData="4" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenPlank" mcData="5" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Sapling" mcData="0" smBlock="-1"/>
+    <block mcBlock="Sapling" mcData="1" smBlock="-1"/>
+    <block mcBlock="Sapling" mcData="2" smBlock="-1"/>
+    <block mcBlock="Sapling" mcData="3" smBlock="-1"/>
+    <block mcBlock="Sapling" mcData="4" smBlock="-1"/>
+    <block mcBlock="Sapling" mcData="5" smBlock="-1"/>
+    <block mcBlock="Bedrock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="FlowingWater" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Water" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="FlowingLava" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Lava" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Sand" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Sand" mcData="1" smBlock="HULL_COLOR_RED_ID"/>
+    <block mcBlock="Gravel" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="GoldOre" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="IronOre" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="CoalOre" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Wood" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Wood" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Wood" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Wood" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Leaves" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Leaves" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Leaves" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Leaves" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Sponge" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Sponge" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Glass" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="LapisLazuliOre" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="LapisLazuliBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Dispenser" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Sandstone" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Sandstone" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Sandstone" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="NoteBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="BedBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="PoweredRail" smBlock="-1"/>
+    <block mcBlock="DetectorRail" smBlock="-1"/>
+    <block mcBlock="StickyPiston" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Cobweb" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DeadShrub" mcData="0" smBlock="-1"/>
+    <block mcBlock="DeadShrub" mcData="1" smBlock="-1"/>
+    <block mcBlock="DeadShrub" mcData="2" smBlock="-1"/>
+    <block mcBlock="DeadShrub" smBlock="-1"/>
+    <block mcBlock="Piston" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="PistonHead" smBlock="-1"/>
+    <block mcBlock="Wool" mcData="0" smBlock="HULL_COLOR_WHITE_ID"/>
+    <block mcBlock="Wool" mcData="1" smBlock="HULL_COLOR_YELLOW_ID"/>
+    <block mcBlock="Wool" mcData="2" smBlock="HULL_COLOR_RED_ID"/>
+    <block mcBlock="Wool" mcData="3" smBlock="HULL_COLOR_BLUE_ID"/>
+    <block mcBlock="Wool" mcData="4" smBlock="HULL_COLOR_YELLOW_ID"/>
+    <block mcBlock="Wool" mcData="5" smBlock="HULL_COLOR_GREEN_ID"/>
+    <block mcBlock="Wool" mcData="6" smBlock="HULL_COLOR_RED_ID"/>
+    <block mcBlock="Wool" mcData="7" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Wool" mcData="8" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Wool" mcData="9" smBlock="HULL_COLOR_BLUE_ID"/>
+    <block mcBlock="Wool" mcData="10" smBlock="HULL_COLOR_PURPLE_ID"/>
+    <block mcBlock="Wool" mcData="11" smBlock="HULL_COLOR_BLUE_ID"/>
+    <block mcBlock="Wool" mcData="12" smBlock="HULL_COLOR_BROWN_ID"/>
+    <block mcBlock="Wool" mcData="13" smBlock="HULL_COLOR_GREEN_ID"/>
+    <block mcBlock="Wool" mcData="14" smBlock="HULL_COLOR_RED_ID"/>
+    <block mcBlock="Wool" mcData="15" smBlock="HULL_COLOR_BLACK_ID"/>
+    <block mcBlock="PistonMoving" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Dandelion" smBlock="-1"/>
+    <block mcBlock="Rose" mcData="0" smBlock="-1"/>
+    <block mcBlock="Rose" mcData="1" smBlock="-1"/>
+    <block mcBlock="Rose" mcData="2" smBlock="-1"/>
+    <block mcBlock="Rose" mcData="3" smBlock="-1"/>
+    <block mcBlock="Rose" mcData="4" smBlock="-1"/>
+    <block mcBlock="Rose" mcData="5" smBlock="-1"/>
+    <block mcBlock="Rose" mcData="6" smBlock="-1"/>
+    <block mcBlock="Rose" mcData="7" smBlock="-1"/>
+    <block mcBlock="Rose" mcData="8" smBlock="-1"/>
+    <block mcBlock="BrownMushroom" smBlock="-1"/>
+    <block mcBlock="RedMushroom" smBlock="-1"/>
+    <block mcBlock="BlockOfGold" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="BlockOfIron" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DoubleSlab" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DoubleSlab" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DoubleSlab" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DoubleSlab" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DoubleSlab" mcData="4" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DoubleSlab" mcData="5" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DoubleSlab" mcData="6" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DoubleSlab" mcData="7" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Slab" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Slab" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Slab" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Slab" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Slab" mcData="4" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Slab" mcData="5" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Slab" mcData="6" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Slab" mcData="7" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Bricks" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="TNT" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Bookshelf" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="MossStone" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Obsidian" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Torch" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Fire" smBlock="-1"/>
+    <block mcBlock="MonsterSpawner" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="OakWoodStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Chest" smBlock="-1"/>
+    <block mcBlock="RedstoneWire" smBlock="-1"/>
+    <block mcBlock="DiamondOre" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="BlockOfDiamond" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="CraftingTable" smBlock="-1"/>
+    <block mcBlock="WheatBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Farmland" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Furnace" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="BurningFurnace" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="SignPost" smBlock="-1"/>
+    <block mcBlock="WoodenDoorBlock" smBlock="-1"/>
+    <block mcBlock="Ladders" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Rails" smBlock="-1"/>
+    <block mcBlock="CobblestoneStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WallSign" smBlock="-1"/>
+    <block mcBlock="Lever" smBlock="-1"/>
+    <block mcBlock="StonePressurePlate" smBlock="-1"/>
+    <block mcBlock="IronDoorBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenPressurePlate" smBlock="-1"/>
+    <block mcBlock="RestoneOre" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="GlowingRedstoneOre" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="RedstoneTorchOff" smBlock="-1"/>
+    <block mcBlock="RedstoneTorch" smBlock="-1"/>
+    <block mcBlock="Button" smBlock="-1"/>
+    <block mcBlock="Snow" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Ice" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="SnowBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Cactus" smBlock="-1"/>
+    <block mcBlock="ClayBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="SugarCaneBlock" smBlock="-1"/>
+    <block mcBlock="Jukebox" smBlock="-1"/>
+    <block mcBlock="Fence" smBlock="-1"/>
+    <block mcBlock="Pumpkin" smBlock="-1"/>
+    <block mcBlock="Netherrack" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="SoulSand" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="GlowstoneBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Portal" smBlock="-1"/>
+    <block mcBlock="JackOLantern" smBlock="-1"/>
+    <block mcBlock="CakeBlock" smBlock="-1"/>
+    <block mcBlock="RedstoneRepeaterOff" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="RedstoneRepeaterOn" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="4" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="5" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="6" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="7" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="8" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="9" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="10" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="11" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="12" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="13" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="14" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlass" mcData="15" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Trapdoor" smBlock="-1"/>
+    <block mcBlock="MonsterEgg" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="MonsterEgg" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="MonsterEgg" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="MonsterEgg" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="MonsterEgg" mcData="4" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="MonsterEgg" mcData="5" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StoneBricks" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StoneBricks" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StoneBricks" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StoneBricks" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="HugeBrownMushroom" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="HugeRedMushroom" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="IronBars" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="GlassPane" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="MelonBlock" smBlock="-1"/>
+    <block mcBlock="PumpkinStem" smBlock="-1"/>
+    <block mcBlock="MelonStem" smBlock="-1"/>
+    <block mcBlock="Vines" smBlock="-1"/>
+    <block mcBlock="FenceGate" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="BrickStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StoneBrickStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Mycelium" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="LilyPad" smBlock="-1"/>
+    <block mcBlock="NetherBrick" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="NetherBrickFence" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="NetherBrickStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="NetherWartStalk" smBlock="-1"/>
+    <block mcBlock="EnchantmentTable" smBlock="-1"/>
+    <block mcBlock="BrewingStandBlock" smBlock="-1"/>
+    <block mcBlock="CauldronBlock" smBlock="-1"/>
+    <block mcBlock="EndPortal" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="EndPortalFrame" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="EndStone" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DragonEgg" smBlock="-1"/>
+    <block mcBlock="RedstoneLamp" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="RedstoneLampOn" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenDoubleSlab" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenDoubleSlab" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenDoubleSlab" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenDoubleSlab" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenDoubleSlab" mcData="4" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenDoubleSlab" mcData="5" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenSlab" mcData="0" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenSlab" mcData="1" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenSlab" mcData="2" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenSlab" mcData="3" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenSlab" mcData="4" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WoodenSlab" mcData="5" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="CocoaPlant" smBlock="-1"/>
+    <block mcBlock="SandstoneStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="EmeraldOre" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="EnderChest" smBlock="-1"/>
+    <block mcBlock="TripwireHook" smBlock="-1"/>
+    <block mcBlock="Tripwire" smBlock="-1"/>
+    <block mcBlock="BlockOfEmerald" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="SpruceWoodStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="BirchWoodStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="JungleWoodStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="CommandBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Beacon" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="CobblestoneWall" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="FlowerPot" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Carrots" smBlock="-1"/>
+    <block mcBlock="Potatoes" smBlock="-1"/>
+    <block mcBlock="WoodenButton" smBlock="-1"/>
+    <block mcBlock="MobHead" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Anvil" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="TrappedChest" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="WeightedPressurePlateLight" smBlock="-1"/>
+    <block mcBlock="WeightedPressurePlateHeavy" smBlock="-1"/>
+    <block mcBlock="RedstoneComparatorInactive" smBlock="-1"/>
+    <block mcBlock="RedstoneComparatorActive" smBlock="-1"/>
+    <block mcBlock="DaylightSensor" smBlock="-1"/>
+    <block mcBlock="RedstoneBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="NetherQuartzOre" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Hopper" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="QuartzBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="QuartzStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="ActivatorRail" smBlock="-1"/>
+    <block mcBlock="Dropper" smBlock="-1"/>
+    <block mcBlock="StainedClay" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="StainedGlassPane" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="AcaciaLeaves" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="AcaciaWood" smBlock="HULL_COLOR_GREY_ID"/>;
+    <block mcBlock="AcaciaWoodStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="DarkOakWoodStairs" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="SlimeBlock" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Barrier" smBlock="-1"/>
+    <block mcBlock="IronTrapdoor" smBlock="-1"/>
+    <block mcBlock="Prismarine" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="SeaLantern" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="HayBale" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Carpet" smBlock="-1"/>
+    <block mcBlock="HardenedClay" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="BlockofCoal" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="PackedIce" smBlock="HULL_COLOR_GREY_ID"/>
+    <block mcBlock="Sunflower" smBlock="-1"/>
+    <block mcBlock="IronShovel" smBlock="-1"/>
+    <block mcBlock="IronPickaxe" smBlock="-1"/>
+    <block mcBlock="IronAxe" smBlock="-1"/>
+    <block mcBlock="FlintAndSteel" smBlock="-1"/>
+    <block mcBlock="RedApple" smBlock="-1"/>
+    <block mcBlock="Bow" smBlock="-1"/>
+    <block mcBlock="Arrow" smBlock="-1"/>
+    <block mcBlock="Coal" smBlock="-1"/>
+    <block mcBlock="Diamond" smBlock="-1"/>
+    <block mcBlock="IronIngot" smBlock="-1"/>
+    <block mcBlock="GoldIngot" smBlock="-1"/>
+    <block mcBlock="IronSword" smBlock="-1"/>
+    <block mcBlock="WoodenSword" smBlock="-1"/>
+    <block mcBlock="WoodenShovel" smBlock="-1"/>
+    <block mcBlock="WoodenPickaxe" smBlock="-1"/>
+    <block mcBlock="WoodenAxe" smBlock="-1"/>
+    <block mcBlock="StoneSword" smBlock="-1"/>
+    <block mcBlock="StoneShovel" smBlock="-1"/>
+    <block mcBlock="StonePickaxe" smBlock="-1"/>
+    <block mcBlock="StoneAxe" smBlock="-1"/>
+    <block mcBlock="DiamondSword" smBlock="-1"/>
+    <block mcBlock="DiamondShovel" smBlock="-1"/>
+    <block mcBlock="DiamondPickaxe" smBlock="-1"/>
+    <block mcBlock="DiamondAxe" smBlock="-1"/>
+    <block mcBlock="Stick" smBlock="-1"/>
+    <block mcBlock="Bowl" smBlock="-1"/>
+    <block mcBlock="MushroomStew" smBlock="-1"/>
+    <block mcBlock="GoldenSword" smBlock="-1"/>
+    <block mcBlock="GoldenShovel" smBlock="-1"/>
+    <block mcBlock="GoldenPickaxe" smBlock="-1"/>
+    <block mcBlock="GoldenAxe" smBlock="-1"/>
+    <block mcBlock="String" smBlock="-1"/>
+    <block mcBlock="Feather" smBlock="-1"/>
+    <block mcBlock="Gunpowder" smBlock="-1"/>
+    <block mcBlock="WoodenHoe" smBlock="-1"/>
+    <block mcBlock="StoneHoe" smBlock="-1"/>
+    <block mcBlock="IronHoe" smBlock="-1"/>
+    <block mcBlock="DiamondHode" smBlock="-1"/>
+    <block mcBlock="GoldHoe" smBlock="-1"/>
+    <block mcBlock="WheatSeeds" smBlock="-1"/>
+    <block mcBlock="Wheat" smBlock="-1"/>
+    <block mcBlock="Bread" smBlock="-1"/>
+    <block mcBlock="LeatherCap" smBlock="-1"/>
+    <block mcBlock="LeatherTunic" smBlock="-1"/>
+    <block mcBlock="LeatherPants" smBlock="-1"/>
+    <block mcBlock="LeatherBoots" smBlock="-1"/>
+    <block mcBlock="ChainHelmet" smBlock="-1"/>
+    <block mcBlock="ChainChestplate" smBlock="-1"/>
+    <block mcBlock="ChainLeggings" smBlock="-1"/>
+    <block mcBlock="ChainBoots" smBlock="-1"/>
+    <block mcBlock="IronHelmet" smBlock="-1"/>
+    <block mcBlock="IronChestplate" smBlock="-1"/>
+    <block mcBlock="IronLeggings" smBlock="-1"/>
+    <block mcBlock="IronBoots" smBlock="-1"/>
+    <block mcBlock="DiamondHelmet" smBlock="-1"/>
+    <block mcBlock="DiamondChestplate" smBlock="-1"/>
+    <block mcBlock="DiamondLeggings" smBlock="-1"/>
+    <block mcBlock="DiamondBoots" smBlock="-1"/>
+    <block mcBlock="GoldenHelmet" smBlock="-1"/>
+    <block mcBlock="GoldenChestplate" smBlock="-1"/>
+    <block mcBlock="GoldenLeggings" smBlock="-1"/>
+    <block mcBlock="GoldenBoots" smBlock="-1"/>
+    <block mcBlock="Flint" smBlock="-1"/>
+    <block mcBlock="RawPorkchop" smBlock="-1"/>
+    <block mcBlock="CookedPorkchop" smBlock="-1"/>
+    <block mcBlock="Painting" smBlock="-1"/>
+    <block mcBlock="GoldenApple" smBlock="-1"/>
+    <block mcBlock="Sign" smBlock="-1"/>
+    <block mcBlock="WoodenDoor" smBlock="-1"/>
+    <block mcBlock="Bucket" smBlock="-1"/>
+    <block mcBlock="WaterBucket" smBlock="-1"/>
+    <block mcBlock="LavaBucket" smBlock="-1"/>
+    <block mcBlock="Minecart" smBlock="-1"/>
+    <block mcBlock="Saddle" smBlock="-1"/>
+    <block mcBlock="IronDoor" smBlock="-1"/>
+    <block mcBlock="RedstoneDust" smBlock="-1"/>
+    <block mcBlock="Snowball" smBlock="-1"/>
+    <block mcBlock="Boat" smBlock="-1"/>
+    <block mcBlock="Leather" smBlock="-1"/>
+    <block mcBlock="MilkBucket" smBlock="-1"/>
+    <block mcBlock="ClayBrick" smBlock="-1"/>
+    <block mcBlock="Clay" smBlock="-1"/>
+    <block mcBlock="SugarCane" smBlock="-1"/>
+    <block mcBlock="Paper" smBlock="-1"/>
+    <block mcBlock="Book" smBlock="-1"/>
+    <block mcBlock="Slimeball" smBlock="-1"/>
+    <block mcBlock="StorageMinecart" smBlock="-1"/>
+    <block mcBlock="PoweredMinecart" smBlock="-1"/>
+    <block mcBlock="ChickenEgg" smBlock="-1"/>
+    <block mcBlock="Compass" smBlock="-1"/>
+    <block mcBlock="FishingRod" smBlock="-1"/>
+    <block mcBlock="Clock" smBlock="-1"/>
+    <block mcBlock="GlowstoneDust" smBlock="-1"/>
+    <block mcBlock="RawFish" smBlock="-1"/>
+    <block mcBlock="CookedFish" smBlock="-1"/>
+    <block mcBlock="Dye" smBlock="-1"/>
+    <block mcBlock="Bone" smBlock="-1"/>
+    <block mcBlock="Sugar" smBlock="-1"/>
+    <block mcBlock="Cake" smBlock="-1"/>
+    <block mcBlock="Bed" smBlock="-1"/>
+    <block mcBlock="RedstoneRepeater" smBlock="-1"/>
+    <block mcBlock="Cookie" smBlock="-1"/>
+    <block mcBlock="Map" smBlock="-1"/>
+    <block mcBlock="Shears" smBlock="-1"/>
+    <block mcBlock="MelonSlice" smBlock="-1"/>
+    <block mcBlock="PumpkinSeeds" smBlock="-1"/>
+    <block mcBlock="MelonSeeds" smBlock="-1"/>
+    <block mcBlock="RawBeef" smBlock="-1"/>
+    <block mcBlock="Steak" smBlock="-1"/>
+    <block mcBlock="RawChicken" smBlock="-1"/>
+    <block mcBlock="CookedChicken" smBlock="-1"/>
+    <block mcBlock="RottenFlesh" smBlock="-1"/>
+    <block mcBlock="EnderPearl" smBlock="-1"/>
+    <block mcBlock="BlazeRod" smBlock="-1"/>
+    <block mcBlock="GhastTear" smBlock="-1"/>
+    <block mcBlock="GoldNugget" smBlock="-1"/>
+    <block mcBlock="NetherWart" smBlock="-1"/>
+    <block mcBlock="Potion" smBlock="-1"/>
+    <block mcBlock="GlassBottle" smBlock="-1"/>
+    <block mcBlock="SpiderEye" smBlock="-1"/>
+    <block mcBlock="FermentedSpiderEye" smBlock="-1"/>
+    <block mcBlock="BlazePowder" smBlock="-1"/>
+    <block mcBlock="MagmaCream" smBlock="-1"/>
+    <block mcBlock="BrewingStand" smBlock="-1"/>
+    <block mcBlock="Cauldron" smBlock="-1"/>
+    <block mcBlock="EyeOfEnder" smBlock="-1"/>
+    <block mcBlock="GlisteringMelon" smBlock="-1"/>
+    <block mcBlock="SpawnEgg" smBlock="-1"/>
+    <block mcBlock="BottleOEnchanting" smBlock="-1"/>
+    <block mcBlock="FireCharge" smBlock="-1"/>
+    <block mcBlock="BookAndQuill" smBlock="-1"/>
+    <block mcBlock="WrittenBook" smBlock="-1"/>
+    <block mcBlock="Emerald" smBlock="-1"/>
+    <block mcBlock="ItemFrame" smBlock="-1"/>
+    <block mcBlock="FlowerPot" smBlock="-1"/>
+    <block mcBlock="Carrot" smBlock="-1"/>
+    <block mcBlock="Potato" smBlock="-1"/>
+    <block mcBlock="BakedPotato" smBlock="-1"/>
+    <block mcBlock="PoisonousPotato" smBlock="-1"/>
+    <block mcBlock="EmptyMap" smBlock="-1"/>
+    <block mcBlock="GoldenCarrot" smBlock="-1"/>
+    <block mcBlock="MobHead" smBlock="-1"/>
+    <block mcBlock="CarrotonaStick" smBlock="-1"/>
+    <block mcBlock="NetherStar" smBlock="-1"/>
+    <block mcBlock="PumpkinPie" smBlock="-1"/>
+    <block mcBlock="FireworkRocket" smBlock="-1"/>
+    <block mcBlock="FireworkStar" smBlock="-1"/>
+    <block mcBlock="EnchantedBook" smBlock="-1"/>
+    <block mcBlock="RedstoneComparator" smBlock="-1"/>
+    <block mcBlock="NetherBrick" smBlock="-1"/>
+    <block mcBlock="NetherQuartz" smBlock="-1"/>
+    <block mcBlock="MinecartwithTNT" smBlock="-1"/>
+    <block mcBlock="MinecartwithHopper" smBlock="-1"/>
+    <block mcBlock="PrismarineShard" smBlock="-1"/>
+    <block mcBlock="PrismarineCrystals" smBlock="-1"/>
+    <block mcBlock="IronHorseArmor" smBlock="-1"/>
+    <block mcBlock="GoldenHorseArmor" smBlock="-1"/>
+    <block mcBlock="DiamondHorseArmor" smBlock="-1"/>
+    <block mcBlock="Lead" smBlock="-1"/>
+    <block mcBlock="NameTag" smBlock="-1"/>
+    <block mcBlock="MinecartwithCommandBlock" smBlock="-1"/>
+    <block mcBlock="13Disc" smBlock="-1"/>
+    <block mcBlock="CatDisc" smBlock="-1"/>
+    <block mcBlock="BlocksDisc" smBlock="-1"/>
+    <block mcBlock="ChirpDisc" smBlock="-1"/>
+    <block mcBlock="FarDisc" smBlock="-1"/>
+    <block mcBlock="MallDisc" smBlock="-1"/>
+    <block mcBlock="MellohiDisc" smBlock="-1"/>
+    <block mcBlock="StalDisc" smBlock="-1"/>
+    <block mcBlock="StradDisc" smBlock="-1"/>
+    <block mcBlock="WardDisc" smBlock="-1"/>
+    <block mcBlock="11Disc" smBlock="-1"/>
+    <block mcBlock="WaitDisc" smBlock="-1"/>
+</blockMap>

@@ -1,0 +1,58 @@
+/*
+ * 2014 SMEdit development team
+ * http://lazygamerz.org
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser Gereral Public Licence as published by the Free
+ * Software Foundation; either version 3 of the Licence, or (at your opinion) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be usefull, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of merchantability or fitness for a
+ * particular purpose. See the GNU Lesser General Public Licence for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public Licence along
+ * with this library; if not, write to the Free Software Foundation, Inc., 59
+ * Temple Place, Suite 330, Boston, Ma 02111-1307 USA.
+ *
+ * http://www.gnu.org/licenses/lgpl.html (English)
+ * http://gugs.sindominio.net/gnu-gpl/lgpl-es.html 
+ *
+ */
+package jo.util.jgl.obj.flat;
+
+import jo.vecmath.Color4f;
+import jo.vecmath.Point2f;
+
+import jo.util.jgl.obj.JGLNode;
+
+public class JGLFlatRect extends JGLNode {
+
+    private Point2f mUpperLeft;
+    private Point2f mLowerRight;
+    private Color4f mColor;
+
+    public Point2f getUpperLeft() {
+        return mUpperLeft;
+    }
+
+    public void setUpperLeft(Point2f upperLeft) {
+        mUpperLeft = upperLeft;
+    }
+
+    public Point2f getLowerRight() {
+        return mLowerRight;
+    }
+
+    public void setLowerRight(Point2f lowerRight) {
+        mLowerRight = lowerRight;
+    }
+
+    public Color4f getColor() {
+        return mColor;
+    }
+
+    public void setColor(Color4f color) {
+        mColor = color;
+    }
+}

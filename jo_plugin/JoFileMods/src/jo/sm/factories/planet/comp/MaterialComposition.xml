@@ -1,0 +1,23 @@
+<compositions author="Jo Jaquinta">
+    <composition title="Composition/Mars Like" description="Mars like material" priority="10">
+        <oldBlock type="*" percent="100" low="0%" high="100%"/>
+        <newBlock type="TERRAIN_MARS_TOP" percent="10" low="-4" high="100%"/>
+        <newBlock type="TERRAIN_MARS_ROCK" percent="10" low="0%" high="-8"/>
+        <newBlock type="TERRAIN_MARS_DIRT" percent="10" low="20%" high="100%"/>
+        <newBlock type="TERRAIN_MARS_TOP_ROCK" percent="10" low="-8" high="100%"/>
+    </composition>
+    <composition title="Composition/Water Planet" description="Watery" priority="10">
+        <oldBlock type="*" percent="100" low="0%" high="100%"/>
+        <newBlock type="TERRAIN_WATER" percent="10" low="10%" high="100%"/>
+        <newBlock type="TERRAIN_DIRT_ID" percent="10" low="0%" high="20%"/>
+        <newBlock type="TERRAIN_SAND_ID" percent="10" low="0%" high="20%"/>
+        <newBlock type="TERRAIN_ROCK_ID" percent="10" low="0%" high="10%"/>
+    </composition>
+    <composition title="Composition/Icy" description="Ice Planet" priority="10">
+        <oldBlock type="*" percent="100" low="0%" high="100%"/>
+        <newBlock type="TERRAIN_ICE_ID" percent="10" low="95%" high="100%"/>
+        <newBlock type="TERRAIN_ICEPLANET_SURFACE" percent="10" low="95%" high="100%"/>
+        <newBlock type="TERRAIN_ICEPLANET_ROCK" percent="10" low="0%" high="100%"/>
+    </composition>
+
+</compositions>

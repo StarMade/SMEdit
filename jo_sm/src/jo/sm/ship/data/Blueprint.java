@@ -1,0 +1,76 @@
+/**
+ * Copyright 2014 
+ * SMEdit https://github.com/StarMade/SMEdit
+ * SMTools https://github.com/StarMade/SMTools
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ **/
+package jo.sm.ship.data;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import jo.vecmath.Point3i;
+
+public class Blueprint {
+
+    private String mName;
+    private Header mHeader;
+    private Logic mLogic;
+    private Meta mMeta;
+    private Map<Point3i, Data> mData;
+
+    public Blueprint() {
+        mData = new HashMap<>();
+    }
+
+    public String getName() {
+        return mName;
+    }
+
+    public void setName(String name) {
+        mName = name;
+    }
+
+    public Header getHeader() {
+        return mHeader;
+    }
+
+    public void setHeader(Header header) {
+        mHeader = header;
+    }
+
+    public Logic getLogic() {
+        return mLogic;
+    }
+
+    public void setLogic(Logic logic) {
+        mLogic = logic;
+    }
+
+    public Meta getMeta() {
+        return mMeta;
+    }
+
+    public void setMeta(Meta meta) {
+        mMeta = meta;
+    }
+
+    public Map<Point3i, Data> getData() {
+        return mData;
+    }
+
+    public void setData(Map<Point3i, Data> data) {
+        mData = data;
+    }
+}

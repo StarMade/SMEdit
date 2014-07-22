@@ -1,0 +1,11 @@
+<colors>
+    <color rgb="808080" block="HULL_COLOR_GREY_ID"/>
+    <color rgb="a020f0" block="HULL_COLOR_PURPLE_ID"/>
+    <color rgb="a52a2a" block="HULL_COLOR_BROWN_ID"/>
+    <color rgb="000000" block="HULL_COLOR_BLACK_ID"/>
+    <color rgb="FF0000" block="HULL_COLOR_RED_ID"/>
+    <color rgb="0000FF" block="HULL_COLOR_BLUE_ID"/>
+    <color rgb="00FF00" block="HULL_COLOR_GREEN_ID"/>
+    <color rgb="FFFF00" block="HULL_COLOR_YELLOW_ID"/>
+    <color rgb="FFFFFF" block="HULL_COLOR_WHITE_ID"/>
+</colors>
