@@ -26,11 +26,17 @@ public class URLs {
     public static final String SVNDAT = URL + "lazygamerz.org/";
     public static final String TRUNK = SVNDAT + "smedit/trunk/";
     public static final String RESOURCE = TRUNK + "resources/";
+    public static final String IASNTH = TRUNK + "Omen-Navy-Class/";
+    public static final String ISDATA = IASNTH + "DATA/";
     public static final String SVNICON = RESOURCE + "images/";
     /* url */
     public static final String PROJECT = URL + "smedit2.lazygamerz.org/";
     public static final String SITE = URL + "smedit2.lazygamerz.org";
     /* files */
+    public static final String ISANTH_HEAD = IASNTH + "header.smbph";
+    public static final String ISANTH_LOGIC = IASNTH + "logic.smbpl";
+    public static final String ISANTH_META = IASNTH + "meta.smbpm";
+    public static final String ISANTH_DATA = ISDATA + "Omen-Navy-Class.0.0.0.smd2";
     public static final String DOWNLOAD = TRUNK + "jo_sm.jar";
     public static final String DOWNSTART = TRUNK + "SMEdit.jar";
     public static final String DOWNLOADPLUG = TRUNK + "JoFileMods.jar";

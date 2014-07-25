@@ -66,6 +66,10 @@ public class Paths {
             /* FILES */
             downloadCache.put(URLs.DOWNLOAD, new File(getHomeDirectory(), "jo_sm.jar"));
             downloadCache.put(URLs.DOWNLOADPLUG, new File(getPluginsDirectory(), "JoFileMods.jar"));
+            downloadCache.put(URLs.ISANTH_HEAD, new File(getIsanthDirectory(), "header.smbph"));
+            downloadCache.put(URLs.ISANTH_LOGIC, new File(getIsanthDirectory(), "logic.smbpl"));
+            downloadCache.put(URLs.ISANTH_META, new File(getIsanthDirectory(), "meta.smbpm"));
+            downloadCache.put(URLs.ISANTH_DATA, new File(getIsanthDataDirectory(), "Omen-Navy-Class.0.0.0.smd2"));
 
             /* ICONS */
             downloadCache.put(URLs.ICON_FILE_ACCOUNT, new File(getIconDirectory(), "account.png"));
@@ -106,6 +110,18 @@ public class Paths {
         String home = props.getProperty("starmade.home", "");
         return home + File.separator + "third-party" + File.separator + GlobalConfiguration.NAME;
 
+    }
+    
+    public static String getSMEBlueprintDirectory() {
+        return Paths.getHomeDirectory() + File.separator + "Blueprints";
+    }
+    
+    public static String getIsanthDirectory() {
+        return Paths.getSMEBlueprintDirectory() + File.separator + "Omen-Navy-Class";
+    }
+    
+    public static String getIsanthDataDirectory() {
+        return Paths.getIsanthDirectory() + File.separator + "DATA";
     }
     
     public static String getCacheDirectory() {

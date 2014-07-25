@@ -32,6 +32,7 @@ import jo.sm.mods.IPluginCallback;
 import jo.sm.ship.data.Block;
 import jo.sm.ship.data.Blueprint;
 import jo.sm.ship.logic.ShipLogic;
+import jo.util.Paths;
 
 /**
  * @Auther Jo Jaquinta for SMEdit Classic - version 1.0
@@ -80,6 +81,18 @@ public class ShipTreeLogic {
         spec.setClassification(IBlocksPlugin.TYPE_SHIP);
         File bpDir = new File(StarMadeLogic.getInstance().getBaseDir(), def ? "blueprints-default" : "blueprints");
         File baseDir = new File(bpDir, name);
+        spec.setFile(baseDir);
+        return spec;
+    }
+    
+    public static ShipSpec getSME_BPSpec(String name, boolean def) {
+        ShipSpec spec = new ShipSpec();
+        spec.setType(ShipSpec.BLUEPRINT);
+        spec.setClassification(IBlocksPlugin.TYPE_SHIP);
+        spec.setName(name);
+        spec.setClassification(IBlocksPlugin.TYPE_SHIP);
+        File SME_BPDir = new File(Paths.getSMEBlueprintDirectory());
+        File baseDir = new File(SME_BPDir, name);
         spec.setFile(baseDir);
         return spec;
     }

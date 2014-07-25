@@ -115,7 +115,7 @@ public class RenderFrame extends JFrame {
         final RenderFrame f = new RenderFrame(args);
         f.setVisible(true);
             try {
-                final ShipSpec spec = ShipTreeLogic.getBlueprintSpec("Isanth-VI", true);
+                final ShipSpec spec = ShipTreeLogic.getSME_BPSpec("Omen-Navy-Class", true);
                 if (spec != null) {
                     IRunnableWithProgress t = new IRunnableWithProgress() {
                         @Override
@@ -164,7 +164,7 @@ public class RenderFrame extends JFrame {
     private JButton mPlugins;
 
     public RenderFrame(String[] args) {
-        setTitle(GlobalConfiguration.NAME + "_Classic version 1." + ((float) GlobalConfiguration.getVersion() / 100));
+        setTitle(GlobalConfiguration.NAME + " version 1." + ((float) GlobalConfiguration.getVersion() / 100));
         mArgs = args;
         setIconImage(GlobalConfiguration.getImage(Resources.ICON));
         setSize(1024, 768);

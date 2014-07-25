@@ -62,11 +62,6 @@ public class Paths {
             downloadCache = new HashMap<>(8);
             /* FILES */
             /* ICONS */
-            downloadCache.put(URLs.ICON_FILE_ACCOUNT, new File(getIconDirectory(), "account.png"));
-            downloadCache.put(URLs.ICON_FILE_HOME, new File(getIconDirectory(), "home.png"));
-            downloadCache.put(URLs.ICON_FILE_PLUGINS, new File(getIconDirectory(), "plugins.png"));
-            downloadCache.put(URLs.ICON_FILE_UNDO, new File(getIconDirectory(), "undo.png"));
-            downloadCache.put(URLs.ICON_FILE_REDO, new File(getIconDirectory(), "redo.png"));
         }
         return Collections.unmodifiableMap(downloadCache);
     }
@@ -81,6 +76,10 @@ public class Paths {
 
     public static String getIconDirectory() {
         return Paths.getHomeDirectory() + File.separator + "resources" + File.separator + "images";
+    }
+    
+    public static String getSMEBlueprintDirectory() {
+        return Paths.getHomeDirectory() + File.separator + "Blueprints";
     }
 
     public static String getLogsDirectory() {
