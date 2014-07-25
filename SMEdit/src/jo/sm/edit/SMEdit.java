@@ -48,15 +48,6 @@ public class SMEdit extends JFrame {
 
     public static void main(final String[] args) {
         GlobalConfiguration.createDirectories();
-        for (final Map.Entry<String, File> item : Paths.getDownloadCaches().entrySet()) {
-            try {
-                HttpClient.download(new URL(item.getKey()), item.getValue());
-            } catch (final IOException e) {
-            }
-        }
-        if (!Paths.validateCurrentDirectory()) {
-            return;
-        }
         updater.checkUpdate(true);
         if (updater.update == -1) {
             OptionScreen opts = new OptionScreen(args);

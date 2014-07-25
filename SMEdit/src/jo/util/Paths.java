@@ -113,7 +113,9 @@ public class Paths {
     }
     
     public static String getSMEBlueprintDirectory() {
-        return Paths.getHomeDirectory() + File.separator + "Blueprints";
+        Properties props = getProps();
+        String home = props.getProperty("starmade.home", "");
+        return home + File.separator + "blueprints-default";
     }
     
     public static String getIsanthDirectory() {

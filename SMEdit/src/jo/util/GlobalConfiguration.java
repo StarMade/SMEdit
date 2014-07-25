@@ -111,7 +111,6 @@ public class GlobalConfiguration {
         dirs.add(Paths.getShapeLibraryDirectory());
         dirs.add(Paths.getCacheDirectory());
         dirs.add(Paths.getSettingsDirectory());
-        dirs.add(Paths.getSMEBlueprintDirectory());
         dirs.add(Paths.getIsanthDirectory());
         dirs.add(Paths.getIsanthDataDirectory());   
         for (final String name : dirs) {

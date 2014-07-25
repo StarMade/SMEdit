@@ -115,7 +115,7 @@ public class RenderFrame extends JFrame {
         final RenderFrame f = new RenderFrame(args);
         f.setVisible(true);
             try {
-                final ShipSpec spec = ShipTreeLogic.getSME_BPSpec("Omen-Navy-Class", true);
+                final ShipSpec spec = ShipTreeLogic.getBlueprintSpec("Omen-Navy-Class", true);
                 if (spec != null) {
                     IRunnableWithProgress t = new IRunnableWithProgress() {
                         @Override

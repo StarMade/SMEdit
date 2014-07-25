@@ -51,7 +51,7 @@ public class RenderPolyLogic {
         Point3i upper = new Point3i();
         blocks.getBounds(lower, upper);
         getBasicPolys(blocks, upper, lower, set.getAllPolys());
-        log.log(Level.INFO, "FillPolys: count="+set.getAllPolys().size());
+        //log.log(Level.INFO, "FillPolys: count="+set.getAllPolys().size());
     }
 
     private static void getBasicPolys(SparseMatrix<Block> blocks,
@@ -508,9 +508,9 @@ public class RenderPolyLogic {
         set.setUnitY(unitY);
         unitZ.scale(scale);
         set.setUnitZ(unitZ);
-        log.log(Level.INFO, "Unit X="+unitX+", Y="+unitY+", Z="+unitZ);
-        log.log(Level.INFO, "Showing +x="+showing[0]+", -x="+showing[1]+", +y="+showing[2]+", -y="+showing[3]+", +z="+showing[4]+", -z="+showing[5]);
-        log.log(Level.INFO, "Showing XPYP="+showing[RenderPoly.XPYP]);
+        //log.log(Level.INFO, "Unit X="+unitX+", Y="+unitY+", Z="+unitZ);
+        //log.log(Level.INFO, "Showing +x="+showing[0]+", -x="+showing[1]+", +y="+showing[2]+", -y="+showing[3]+", +z="+showing[4]+", -z="+showing[5]);
+        //log.log(Level.INFO, "Showing XPYP="+showing[RenderPoly.XPYP]);
         //System.out.println("Unit X="+unitX+", Y="+unitY+", Z="+unitZ);
         //System.out.println("Showing +x="+showing[0]+", -x="+showing[1]+", +y="+showing[2]+", -y="+showing[3]+", +z="+showing[4]+", -z="+showing[5]);
         //System.out.println("Showing XPYP="+showing[RenderPoly.XPYP]);
@@ -529,7 +529,7 @@ public class RenderPolyLogic {
                 return (int) Math.signum(delta);
             }
         });
-        log.log(Level.INFO, "TransformAndSort, visible="+set.getVisiblePolys().size());
+        //log.log(Level.INFO, "TransformAndSort, visible="+set.getVisiblePolys().size());
         //System.out.println("TransformAndSort, visible="+set.getVisiblePolys().size());
     }
 
@@ -582,7 +582,7 @@ public class RenderPolyLogic {
 
     private static void renderTriangle(Graphics2D g2, RenderSet set,
             RenderPoly tile, ImageIcon icon) {
-        log.log(Level.INFO, "Render triangle "+tile.getType());
+        //log.log(Level.INFO, "Render triangle "+tile.getType());
         //System.out.println("Render triangle "+tile.getType());
         Point3f[] corners = getCorners(tile, set);
         int pCenter = (tile.getType() - RenderPoly.TRI1);

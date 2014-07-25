@@ -1,7 +1,6 @@
 /**
- * Copyright 2014 
- * SMEdit https://github.com/StarMade/SMEdit
- * SMTools https://github.com/StarMade/SMTools
+ * Copyright 2014 SMEdit https://github.com/StarMade/SMEdit SMTools
+ * https://github.com/StarMade/SMTools
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -20,14 +19,17 @@ package jo.util;
 import java.awt.Window;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
+import jo.util.io.HttpClient;
 
 /**
  * @Auther Robert Barefoot for SMEdit - version 1.0
@@ -42,12 +44,12 @@ public class Update {
     private static int getLatestVersion() {
         try {
             InputStream is = new URL(URLs.SVERSION).openConnection().getInputStream();
-            
+
             int off = 0;
             byte[] b = new byte[2];
             while ((off += is.read(b, off, 2 - off)) != 2) {
             }
-            
+
             return ((0xFF & b[0]) << 8) + (0xFF & b[1]);
         } catch (final IOException e) {
             log.log(Level.INFO, "Failed to get version information! {0}", e.getMessage());
@@ -65,12 +67,21 @@ public class Update {
             Update.log.info("New SMEdit_Classic App version available!");
             update = JOptionPane.showConfirmDialog(parent,
                     "A newer version of the SMEdit_Classic is available.\n\n"
-                            + " Do you wish to update?\n\n"
-                            + "\n\n"
-                            + "Choosing not to update may result\n"
-                            + "in problems running the client.",
+                    + " Do you wish to update?\n\n"
+                    + "\n\n"
+                    + "Choosing not to update may result\n"
+                    + "in problems running the client.",
                     "Update Avalable", JOptionPane.YES_NO_OPTION);
             if (update == 0) {
+                for (final Map.Entry<String, File> item : Paths.getDownloadCaches().entrySet()) {
+                    try {
+                        HttpClient.download(new URL(item.getKey()), item.getValue());
+                    } catch (final IOException e) {
+                    }
+                }
+                if (!Paths.validateCurrentDirectory()) {
+                    return;
+                }
                 updateBot();
             }
         }
