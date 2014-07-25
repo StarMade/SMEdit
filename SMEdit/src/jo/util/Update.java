@@ -79,9 +79,6 @@ public class Update {
                     } catch (final IOException e) {
                     }
                 }
-                if (!Paths.validateCurrentDirectory()) {
-                    return;
-                }
                 updateBot();
             }
         }

@@ -25,11 +25,6 @@ package jo.util;
 public class URLs {
     public static final String URL = "http://";
     public static final String URLS = "https://";
-    public static final String FILE = "lazygamerz.org/";
-    public static final String HOME = "smedit/";
-    public static final String LOC = "trunk/resources/";
-    public static final String SOURCE = URL + FILE + HOME + LOC;
-    public static final String SVNICON = SOURCE + "images/";
     public static final String OPENSVN = URLS + "github.com/StarMade/SMEdit";
     /* url */
     public static final String SITE = URL + "smedit2.lazygamerz.org";

@@ -1,7 +1,6 @@
 /**
- * Copyright 2014 
- * SMEdit https://github.com/StarMade/SMEdit
- * SMTools https://github.com/StarMade/SMTools
+ * Copyright 2014 SMEdit https://github.com/StarMade/SMEdit SMTools
+ * https://github.com/StarMade/SMTools
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -30,6 +29,7 @@ import javax.swing.JFrame;
 import jo.util.GlobalConfiguration;
 import jo.util.OptionScreen;
 import jo.util.Paths;
+import static jo.util.Paths.getDownloadCaches;
 import jo.util.Update;
 import jo.util.io.HttpClient;
 
@@ -48,6 +48,9 @@ public class SMEdit extends JFrame {
 
     public static void main(final String[] args) {
         GlobalConfiguration.createDirectories();
+        if (!Paths.validateCurrentDirectory()) {
+            return;
+        }
         updater.checkUpdate(true);
         if (updater.update == -1) {
             OptionScreen opts = new OptionScreen(args);
@@ -60,7 +63,14 @@ public class SMEdit extends JFrame {
         mArgs = args;
         mOptionDir = new File(Paths.getHomeDirectory());
         File jo_smJar = new File(mOptionDir, "jo_sm.jar");
-
+        if (!jo_smJar.exists()) {
+            for (final Map.Entry<String, File> item : getDownloadCaches().entrySet()) {
+                try {
+                    HttpClient.download(new URL(item.getKey()), item.getValue());
+                } catch (final IOException e) {
+                }
+            }
+        }
         try {
             URL josmURL = jo_smJar.toURI().toURL();
             URLClassLoader smLoader = new URLClassLoader(new URL[]{josmURL}, SMEdit.class.getClassLoader());

@@ -1,7 +1,6 @@
 /**
- * Copyright 2014 
- * SMEdit https://github.com/StarMade/SMEdit
- * SMTools https://github.com/StarMade/SMTools
+ * Copyright 2014 SMEdit https://github.com/StarMade/SMEdit SMTools
+ * https://github.com/StarMade/SMTools
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -22,6 +21,7 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URL;
 import java.net.URLDecoder;
 import java.util.Collections;
 import java.util.HashMap;
@@ -29,6 +29,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import jo.util.io.HttpClient;
 
 /**
  *
@@ -44,8 +45,6 @@ public class Paths {
     /* file locations */
     private static Properties mProps;
     private static File mStarMadeDir;
-
-    
 
     public static String getCollectDirectory() {
         final File dir = new File(Paths.getPluginsDirectory(), ".jar");
@@ -84,26 +83,16 @@ public class Paths {
             downloadCache.put(URLs.ICON_FILE_BPFILE, new File(getIconDirectory(), "open_print.png"));
             downloadCache.put(URLs.ICON_FILE_SAVE, new File(getIconDirectory(), "save.png"));
             downloadCache.put(URLs.ICON_FILE_SAVEAS, new File(getIconDirectory(), "save_as.png"));
-            
+
             downloadCache.put(URLs.ICON_FILE_WIKI, new File(getIconDirectory(), "wiki.png"));
             downloadCache.put(URLs.ICON_FILE_FACE, new File(getIconDirectory(), "face.png"));
             downloadCache.put(URLs.ICON_FILE_TWIT, new File(getIconDirectory(), "twit.png"));
             downloadCache.put(URLs.ICON_FILE_PROJECT, new File(getIconDirectory(), "web.png"));
-            
+
         }
         return Collections.unmodifiableMap(downloadCache);
     }
     /* folder directories */
-
-    public static String getOptsFile() {
-        final String path;
-        if (GlobalConfiguration.getCurrentOperatingSystem() == OperatingSystem.WINDOWS) {
-            path = System.getProperty("user.home") + File.separator + ".smeopts";
-        } else {
-            path = Paths.getUnixHome() + File.separator + ".smeopts";
-        }
-        return path;
-    }
 
     public static String getHomeDirectory() {
         Properties props = getProps();
@@ -111,41 +100,41 @@ public class Paths {
         return home + File.separator + "third-party" + File.separator + GlobalConfiguration.NAME;
 
     }
-    
+
     public static String getSMEBlueprintDirectory() {
         Properties props = getProps();
         String home = props.getProperty("starmade.home", "");
         return home + File.separator + "blueprints-default";
     }
-    
+
     public static String getIsanthDirectory() {
         return Paths.getSMEBlueprintDirectory() + File.separator + "Omen-Navy-Class";
     }
-    
+
     public static String getIsanthDataDirectory() {
         return Paths.getIsanthDirectory() + File.separator + "DATA";
     }
-    
+
     public static String getCacheDirectory() {
         return Paths.getHomeDirectory() + File.separator + "Cache";
     }
-    
+
     public static String getLogsDirectory() {
         return Paths.getHomeDirectory() + File.separator + "Logs";
     }
-    
+
     public static String getPluginsDirectory() {
         return Paths.getHomeDirectory() + File.separator + "Plugins";
     }
-    
+
     public static String getResourceDirectory() {
         return Paths.getHomeDirectory() + File.separator + "resources";
     }
-    
+
     public static String getScreenshotsDirectory() {
         return Paths.getHomeDirectory() + File.separator + "Screenshots";
     }
-    
+
     public static String getSettingsDirectory() {
         return Paths.getHomeDirectory() + File.separator + "Settings";
     }
@@ -201,10 +190,7 @@ public class Paths {
             return false;
         }
         File crashJar = new File(d, "CrashAndBugReport.jar");
-        if (!crashJar.exists()) {
-            return false;
-        }
-        return true;
+        return crashJar.exists();
     }
 
     public static void loadProps() {
@@ -241,6 +227,12 @@ public class Paths {
         lookForStarMadeDir(new File(home));
         if (mStarMadeDir != null) {
             saveProps();
+            for (final Map.Entry<String, File> item : getDownloadCaches().entrySet()) {
+                try {
+                    HttpClient.download(new URL(item.getKey()), item.getValue());
+                } catch (final IOException e) {
+                }
+            }
             return true;
         }
         System.out.println("Scanning home directory");
