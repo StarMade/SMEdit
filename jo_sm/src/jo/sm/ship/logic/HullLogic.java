@@ -82,9 +82,9 @@ public class HullLogic {
         grid.getBounds(lower, upper);
         if (cb != null) {
             cb.setStatus("Calculating exterior");
-            cb.startTask((upper.x - lower.x + 5) * (upper.y - lower.y + 5)
-                    + (upper.x - lower.x + 5) * (upper.z - lower.z + 5)
-                    + (upper.z - lower.z + 5) * (upper.y - lower.y + 5)
+            cb.startTask((upper.x - lower.x + 3) * (upper.y - lower.y + 3)
+                    + (upper.x - lower.x + 3) * (upper.z - lower.z + 3)
+                    + (upper.z - lower.z + 3) * (upper.y - lower.y + 3)
             );
         }
         Set<Point3i> exterior = new HashSet<>();

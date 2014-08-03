@@ -82,7 +82,7 @@ public class ImportOBJPlugin implements IBlocksPlugin {
         try {
             Hull3f hull;
             hull = OBJLogic.readFile(params.getFile());
-            log.log(Level.INFO, "Read " + hull.getTriangles().size() + " triangles");
+            //log.log(Level.INFO, "Read " + hull.getTriangles().size() + " triangles");
             if (hull.getTriangles().isEmpty()) {
                 throw new IllegalArgumentException("OBJ File " + params.getFile() + " has no triangles defined in it.");
             }

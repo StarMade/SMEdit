@@ -104,7 +104,7 @@ public final class SparseMatrixNew<T> {
     }
 
     public Iterator<Point3i> iteratorNonNull() {
-        List<Point3i> points = new ArrayList<Point3i>();
+        List<Point3i> points = new ArrayList<>();
         for (Iterator<Point3i> i = iterator(); i.hasNext();) {
             Point3i p = i.next();
             if (contains(p)) {

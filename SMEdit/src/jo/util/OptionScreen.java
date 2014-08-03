@@ -86,7 +86,7 @@ public class OptionScreen extends JFrame {
 
         mArgs = args;
         setIconImage(GlobalConfiguration.getImage(Resources.ICON));
-        setTitle(GlobalConfiguration.NAME + " version 1." + ((float) GlobalConfiguration.getVersion() / 100));
+        setTitle(GlobalConfiguration.NAME + " version 1.0" + ((float) GlobalConfiguration.getVersion() / 100));
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
@@ -283,15 +283,12 @@ public class OptionScreen extends JFrame {
         jLabel6.setText("StarMade game folder directory?");
 
         //jComboBox2 = new JComboBox(new DefaultComboBoxModel(new String[]{"Cartoon", "OldStyle", "Pixel", "Realistic", "Custom"}));
-        jComboBox2 = new JComboBox(new DefaultComboBoxModel(new String[]{"Default", "OldStyle", "Pixel", "Realistic"}));
+        jComboBox2 = new JComboBox(new DefaultComboBoxModel(new String[]{"Default", "Pixel", "Realistic"}));
         jComboBox2.setBorder(createEtchedBorder());
         if (null != mProps.getProperty("texture", "")) {
             switch (mProps.getProperty("texture", "")) {
                 case "Default":
                     jComboBox2.setSelectedIndex(0);
-                    break;
-                case "OldStyle":
-                    jComboBox2.setSelectedIndex(1);
                     break;
                 case "Pixel":
                     jComboBox2.setSelectedIndex(2);

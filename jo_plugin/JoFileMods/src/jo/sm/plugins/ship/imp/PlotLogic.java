@@ -131,9 +131,9 @@ public class PlotLogic {
         plotLine(target1, target2, iterpolate);
         Set<Point3i> area;
         area = new HashSet<>();
-        log.log(Level.INFO, "interpolate over");
+        //log.log(Level.INFO, "interpolate over");
         for (Point3i i : iterpolate) {
-            log.log(Level.INFO, " "+i);
+            //log.log(Level.INFO, " "+i);
             plotLine(i, fulcrum, area);
         }
         plotArea(grid, area, color);
@@ -217,19 +217,19 @@ public class PlotLogic {
         Point3f upperModel;
         upperModel = new Point3f();
         Hull3fLogic.getBounds(hull, lowerModel, upperModel);
-        log.log(Level.INFO, "Model Bounds: " + lowerModel + " -- " + upperModel);
+        //log.log(Level.INFO, "Model Bounds: " + lowerModel + " -- " + upperModel);
         float longestModel;
         longestModel = Math.max(upperModel.x - lowerModel.x, Math.max(upperModel.y - lowerModel.y, upperModel.z - lowerModel.z));
         float scale;
         scale = longestDimension / longestModel;
-        log.log(Level.INFO, "Scale: " + scale + " (" + longestDimension + "/" + longestModel);
+        //log.log(Level.INFO, "Scale: " + scale + " (" + longestDimension + "/" + longestModel);
         lowerGrid.x = (int) Math.floor(lowerModel.x * scale);
         lowerGrid.y = (int) Math.floor(lowerModel.y * scale);
         lowerGrid.z = (int) Math.floor(lowerModel.z * scale);
         upperGrid.x = (int) Math.ceil(upperModel.x * scale);
         upperGrid.y = (int) Math.ceil(upperModel.y * scale);
         upperGrid.z = (int) Math.ceil(upperModel.z * scale);
-        log.log(Level.INFO, "Grid Bounds: " + lowerGrid + " -- " + upperGrid);
+        //log.log(Level.INFO, "Grid Bounds: " + lowerGrid + " -- " + upperGrid);
         return scale;
     }
 
@@ -325,7 +325,7 @@ public class PlotLogic {
         rgb = (r << 16) | (g << 8) | (b);
         short color;
         color = mapColor(rgb);
-        log.log(Level.INFO, c+" -> "+r+","+g+","+b+" -> "+Integer.toHexString(rgb)+" -> "+color);
+        //log.log(Level.INFO, c+" -> "+r+","+g+","+b+" -> "+Integer.toHexString(rgb)+" -> "+color);
         return color;
     }
 
@@ -405,7 +405,7 @@ public class PlotLogic {
 
     private static void addTriangle(Hull3f sphere, Point3f p1, Point3f p2,
             Point3f p3, float resolution) {
-        log.log(Level.INFO, "Adding "+p1+", "+p2+", "+p3);
+        //log.log(Level.INFO, "Adding "+p1+", "+p2+", "+p3);
         if ((p1.distance(p2) < resolution) || (p2.distance(p3) < resolution) || (p3.distance(p1) < resolution)) {
             Triangle3f t;
             t = new Triangle3f(p1, p2, p3);

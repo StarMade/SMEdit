@@ -34,7 +34,7 @@ public class PCSBean extends Bean {
     private static final Logger log = Logger.getLogger(PCSBean.class.getName());
 
     private final List<PropertyChangeListener> mGenericListeners;
-    private Map<String, List<PropertyChangeListener>> mSpecificListerners;
+    private final Map<String, List<PropertyChangeListener>> mSpecificListerners;
     private PropertyChangeEvent queueEvent;
 
     // constructor

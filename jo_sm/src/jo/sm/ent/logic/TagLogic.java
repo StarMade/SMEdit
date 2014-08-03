@@ -23,6 +23,9 @@ import jo.sm.logic.utils.ByteUtils;
 import jo.sm.logic.utils.DebugLogic;
 import jo.vecmath.Point3b;
 import jo.vecmath.Point3i;
+import jo.vecmath.Tuple3b;
+import jo.vecmath.Tuple3f;
+import jo.vecmath.Tuple3i;
 import jo.vecmath.Vector3f;
 
 
@@ -52,7 +55,7 @@ public class TagLogic {
         TagType type = TagType.values()[t];
         Tag input = null;
         if (type == TagType.FINISH) {
-            input = new Tag(TagType.FINISH, null, ((TagLogic[]) (null)));
+            input = new Tag(TagType.FINISH, null, (null));
         } else {
             String name = dis.readUTF();
             DebugLogic.debug("Reading " + name);
@@ -194,7 +197,7 @@ public class TagLogic {
                     Tag t = new Tag(nextType, name, val);
                     inbuf.add(t);
                 } while (nextType != TagType.FINISH);
-                value = inbuf.toArray(new Tag[0]);
+                value = inbuf.toArray(new Tag[inbuf.size()]);
                 break;
             }
             case SERIALIZABLE: {
@@ -259,10 +262,10 @@ public class TagLogic {
             case FINISH:
                 return;
             case BYTE:
-                dos.writeByte(((Byte) tag.getValue()));
+                dos.writeByte(((int) tag.getValue()));
                 return;
             case SHORT:
-                dos.writeShort(((Short) tag.getValue()));
+                dos.writeShort(((int) tag.getValue()));
                 return;
             case INT:
                 dos.writeInt(((Integer) tag.getValue()));
@@ -285,19 +288,19 @@ public class TagLogic {
                 dos.writeUTF((String) tag.getValue());
                 return;
             case VECTOR3f:
-                dos.writeFloat(((Vector3f) tag.getValue()).x);
-                dos.writeFloat(((Vector3f) tag.getValue()).y);
-                dos.writeFloat(((Vector3f) tag.getValue()).z);
+                dos.writeFloat(((Tuple3f) tag.getValue()).x);
+                dos.writeFloat(((Tuple3f) tag.getValue()).y);
+                dos.writeFloat(((Tuple3f) tag.getValue()).z);
                 return;
             case VECTOR3i:
-                dos.writeInt(((Point3i) tag.getValue()).x);
-                dos.writeInt(((Point3i) tag.getValue()).y);
-                dos.writeInt(((Point3i) tag.getValue()).z);
+                dos.writeInt(((Tuple3i) tag.getValue()).x);
+                dos.writeInt(((Tuple3i) tag.getValue()).y);
+                dos.writeInt(((Tuple3i) tag.getValue()).z);
                 return;
             case VECTOR3b:
-                dos.write(((Point3b) tag.getValue()).x);
-                dos.write(((Point3b) tag.getValue()).y);
-                dos.write(((Point3b) tag.getValue()).z);
+                dos.write(((Tuple3b) tag.getValue()).x);
+                dos.write(((Tuple3b) tag.getValue()).y);
+                dos.write(((Tuple3b) tag.getValue()).z);
                 return;
             case LIST: {
                 Tag[] val = (Tag[]) tag.getValue();

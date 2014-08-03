@@ -1,5 +1,6 @@
 /**
- * Copyright 2014 SMEdit https://github.com/StarMade/SMEdit SMTools
+ * Copyright 2014 SMEdit 
+ * https://github.com/StarMade/SMEdit SMTools
  * https://github.com/StarMade/SMTools
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not

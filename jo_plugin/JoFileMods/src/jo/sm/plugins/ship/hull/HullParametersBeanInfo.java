@@ -37,7 +37,7 @@ import jo.sm.ui.act.plugin.ComboPropertyDescriptor;
  **/
 public class HullParametersBeanInfo implements BeanInfo {
 
-    private static final Map<String, Object> COMBO_MAP = new HashMap<String, Object>();
+    private static final Map<String, Object> COMBO_MAP = new HashMap<>(10);
     private static final Logger log = Logger.getLogger(HullParametersBeanInfo.class.getName());
 
     static {

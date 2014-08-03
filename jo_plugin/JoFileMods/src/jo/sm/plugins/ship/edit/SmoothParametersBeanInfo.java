@@ -38,10 +38,8 @@ import jo.sm.ui.act.plugin.ComboPropertyDescriptor;
  **/
 public class SmoothParametersBeanInfo implements BeanInfo {
 
-    private static final Map<String, Object> SCOPE_MAP = new HashMap<>();
-
-
-    private static final Map<String, Object> TYPE_MAP = new HashMap<>();
+    private static final Map<String, Object> SCOPE_MAP = new HashMap<>(3);
+    private static final Map<String, Object> TYPE_MAP = new HashMap<>(3);
     private static final Logger log = Logger.getLogger(SmoothParametersBeanInfo.class.getName());
 
     static {

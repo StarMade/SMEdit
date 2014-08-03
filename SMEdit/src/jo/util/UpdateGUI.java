@@ -45,7 +45,7 @@ public class UpdateGUI extends JFrame {
         setIconImage(GlobalConfiguration.getImage(Resources.ICON));
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
-        setTitle("SMEdit_Classic Updater");
+        setTitle("SMEdit Updater");
 
         JPanel panel1 = new JPanel();
         panel1.setBorder(BorderFactory.createTitledBorder(" Downloading update... "));

@@ -57,7 +57,7 @@ public class HttpClient {
         final String os;
         switch (GlobalConfiguration.getCurrentOperatingSystem()) {
             case MAC:
-                os = "Macintosh; Intel Mac OS X 10_6_6";
+                os = "Macintosh; Intel Mac OS X 10_7_3";
                 break;
             case LINUX:
                 os = "X11; Linux " + (x64 ? "x86_64" : "i686");
@@ -68,7 +68,7 @@ public class HttpClient {
         }
         final StringBuilder buf = new StringBuilder(125);
         buf.append("Mozilla/5.0 (").append(os).append(")");
-        buf.append(" AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.100 Safari/534.30");
+        buf.append(" AppleWebKit/534.55.3 (KHTML, like Gecko) Chrome/35.0.1985.125 Safari/534.55.3");
         return buf.toString();
     }
 

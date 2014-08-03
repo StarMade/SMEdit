@@ -53,10 +53,10 @@ public class Boot {
 
         if (os.contains("windows")) {
             Runtime.getRuntime().exec("javaw " + flags + " -classpath \""
-                    + location + "\" jo.sm.ui.RenderFrame");
+                    + location + "\" Application");
         } else {
             Runtime.getRuntime().exec(new String[]{"/bin/sh",
-                "-c", "java " + flags + " -classpath \"" + location + "\" jo.sm.ui.RenderFrame"});
+                "-c", "java " + flags + " -classpath \"" + location + "\" Application"});
         }
 
     }

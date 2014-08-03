@@ -19,7 +19,6 @@ package jo.util;
 
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
@@ -101,7 +100,7 @@ public class GlobalConfiguration {
 
     public static void createDirectories() {
         final ArrayList<String> dirs;
-        dirs = new ArrayList<>();
+        dirs = new ArrayList<>(11);
         dirs.add(Paths.getHomeDirectory());
         dirs.add(Paths.getResourceDirectory());
         dirs.add(Paths.getIconDirectory());
@@ -134,14 +133,12 @@ public class GlobalConfiguration {
         return null;
     }
 
-    public static BufferedImage getImageFile(final File resource) {
-        try {
-            return ImageIO.read(resource);
-        } catch (final IOException e) {
-        }
-        return null;
-    }
-
+    /**
+     *
+     * @param path gets the file location on the web to the needed resource
+     * @return
+     * @throws MalformedURLException
+     */
     public static URL getResourceURL(final String path)
             throws MalformedURLException {
         return isRUNNING_FROM_JAR() ? GlobalConfiguration.class.getResource(path)
@@ -150,8 +147,6 @@ public class GlobalConfiguration {
 
     public static int getVersion() {
         try {
-            //File file = new File(Paths.getVersionCache());
-            //final InputStream is = new FileInputStream(file);
             final InputStream is = isRUNNING_FROM_JAR() ? GlobalConfiguration.class.getClassLoader().getResourceAsStream(Resources.SVERSION) : new FileInputStream(Paths.SVERSION);
 
             int off = 0;

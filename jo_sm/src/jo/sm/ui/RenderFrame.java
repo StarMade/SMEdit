@@ -92,26 +92,7 @@ public class RenderFrame extends JFrame {
     private static String[] mArgs;
     private static boolean debugLogging = true;
 
-    public static void preLoad() {
-        Properties props = StarMadeLogic.getProps();
-        String home = props.getProperty("starmade.home", "");
-        if (!StarMadeLogic.isStarMadeDirectory(home)) {
-            home = System.getProperty("user.dir");
-            if (!StarMadeLogic.isStarMadeDirectory(home)) {
-                home = JOptionPane.showInputDialog(null, "Enter in the home directory for StarMade", home);
-                if (home == null) {
-                    System.exit(0);
-                }
-            }
-            props.put("starmade.home", home);
-            StarMadeLogic.saveProps();
-        }
-        StarMadeLogic.setBaseDir(home);
-    }
-
     public static void main(String[] args) {
-        SplashScreen splash = new SplashScreen(args);
-        preLoad();
         final RenderFrame f = new RenderFrame(args);
         f.setVisible(true);
             try {
@@ -124,12 +105,12 @@ public class RenderFrame extends JFrame {
                             StarMadeLogic.setModel(ShipTreeLogic.loadShip(spec, cb));
                         }
                     };
-                    RunnableLogic.run(f, "Loading...", t);
+                    log.log(Level.INFO, "Loading Ship!");
+                    RunnableLogic.run(f, "", t);
                 }
             } catch (Exception e) {
                 log.log(Level.WARNING, "Ship load failed!", e);
             }
-        splash.close();
         log.config("Main application started: " + GlobalConfiguration.NAME);
     }
 
@@ -158,16 +139,17 @@ public class RenderFrame extends JFrame {
     private RenderPanel mClient;
     private JToolBar outerToolBar;
     private JToolBar innerToolBar;
-    private JTabbedPane ClientWindows;
-    public JScrollPane textScroll;
+    private final JTabbedPane ClientWindows;
+    public final JScrollPane textScroll;
 
     private JButton mPlugins;
 
     public RenderFrame(String[] args) {
-        setTitle(GlobalConfiguration.NAME + " version 1." + ((float) GlobalConfiguration.getVersion() / 100));
+        setTitle(GlobalConfiguration.NAME + " version 1.0" + ((float) GlobalConfiguration.getVersion() / 100));
         mArgs = args;
         setIconImage(GlobalConfiguration.getImage(Resources.ICON));
         setSize(1024, 768);
+        setLocationRelativeTo(getOwner());
 
         /* outer-most containers actually reserved for docking the toolbars.
          * so "cp" is actually not the contentpane of the JPanel, but let's
@@ -190,8 +172,8 @@ public class RenderFrame extends JFrame {
 
         cp.setLayout(new BorderLayout());
         JPanel main = new JPanel(new BorderLayout());
-        main.add(new EditPanel(mClient, this), BorderLayout.WEST);
-        main.add(mClient, BorderLayout.CENTER);
+        main.add(new EditPanel(getClient(), this), BorderLayout.WEST);
+        main.add(getClient(), BorderLayout.CENTER);
         textScroll = new JScrollPane(TextAreaLogHandler.TEXT_AREA,
 				JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
 				JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
@@ -222,7 +204,7 @@ public class RenderFrame extends JFrame {
         addWindowFocusListener(new WindowAdapter() {
             @Override
             public void windowGainedFocus(WindowEvent e) {
-                mClient.requestFocusInWindow();
+                getClient().requestFocusInWindow();
             }
         });
     }
@@ -425,7 +407,7 @@ public class RenderFrame extends JFrame {
         int lastModIndex = menu.getItemCount();
         int lastCount = 0;
         for (int subType : subTypes) {
-            int thisCount = MenuLogic.addPlugins(mClient, menu, type, subType);
+            int thisCount = MenuLogic.addPlugins(getClient(), menu, type, subType);
             if ((thisCount > 0) && (lastCount > 0)) {
                 JSeparator sep = new JSeparator();
                 sep.setName("plugin");
@@ -446,7 +428,7 @@ public class RenderFrame extends JFrame {
         }
 
         for (IBlocksPlugin plugin : plugins) {
-            BlocksPluginAction action = new BlocksPluginAction(mClient, plugin);
+            BlocksPluginAction action = new BlocksPluginAction(getClient(), plugin);
             JMenuItem men = new JMenuItem(action);
             popup.add(men);
         }

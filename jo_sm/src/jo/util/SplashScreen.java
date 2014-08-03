@@ -103,7 +103,6 @@ public class SplashScreen extends JDialog {
         progress.setLocation(10, 255);
         label1.add(progress);
         add(label1, BorderLayout.NORTH);
-        //add(progress, BorderLayout.CENTER);
         add(handler.label, BorderLayout.SOUTH);
         pack();
         try {
@@ -112,21 +111,21 @@ public class SplashScreen extends JDialog {
             setResizable(false);
             setVisible(true);
             setAlwaysOnTop(true);
-            Thread.sleep(200);
+            Thread.sleep(300);
         } catch (InterruptedException | SecurityException exc) {
         }
         try {
 
             log.info("Starting Bootstrap");
             bootstrap();
-            Thread.sleep(200);
+            Thread.sleep(300);
         } catch (InterruptedException exc) {
         }
         try {
             log.info("Loading Application");
             GlobalConfiguration.registerLogging();
             Logger.getLogger("").removeHandler(handler);
-            Thread.sleep(200);
+            Thread.sleep(300);
         } catch (InterruptedException | SecurityException exc) {
         }
 

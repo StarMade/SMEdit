@@ -171,9 +171,9 @@ public class HullPlugin implements IBlocksPlugin {
     private void generateSphere(SparseMatrix<Block> grid, Point3i center, Point3i lower, Point3i upper, IPluginCallback cb, boolean hemi) {
         cb.setStatus("Filling sphere");
         Point3f radius = new Point3f(upper.x - lower.x, upper.y - lower.y, upper.z - lower.z);
-        radius.scale(.5f);
+        radius.scale(0.50f);
         float maxDiam = Math.max(Math.max(radius.x, radius.y), radius.z);
-        float resolution = 2.5f / maxDiam;
+        float resolution = 2.50f / maxDiam;
         Hull3f sphere = PlotLogic.makeSphere(resolution, hemi);
         PlotLogic.mapHull(grid, sphere, radius, new Point3i(), new Point3i(), cb);
     }

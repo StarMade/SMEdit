@@ -64,7 +64,7 @@ public class ImportOBJParametersBeanInfo implements BeanInfo {
                     props[i] = new FilePropertyDescriptor(props[i].getName(),
                             props[i].getReadMethod(), props[i].getWriteMethod(), mInfo);
                 } catch (IntrospectionException e) {
-                    log.log(Level.WARNING, "Ship load failed!", e);
+                    log.log(Level.WARNING, "FilePropertyDescriptor failed!", e);
                 }
             }
         }

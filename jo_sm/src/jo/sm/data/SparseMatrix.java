@@ -32,6 +32,26 @@ import jo.vecmath.Point3s;
  **/
 public final class SparseMatrix<T> {
 
+    public static long toHashCode(int x, int y, int z) {
+        byte[] buffer = new byte[8];
+        buffer[0] = 0;
+        ByteUtils.toBytes((short) x, buffer, 1);
+        ByteUtils.toBytes((short) y, buffer, 3);
+        ByteUtils.toBytes((short) z, buffer, 5);
+        buffer[7] = 1;
+        return ByteUtils.toLong(buffer);
+    }
+
+    public static Point3i fromHashCode(long hash) {
+        byte[] buffer = new byte[8];
+        ByteUtils.toBytes(hash, buffer);
+        short x = ByteUtils.toShort(buffer, 1);
+        short y = ByteUtils.toShort(buffer, 3);
+        short z = ByteUtils.toShort(buffer, 5);
+        Point3i p = new Point3i(x, y, z);
+        return p;
+    }
+
     private Map<Long, T> mMatrix;
     private Point3i mLower;
     private Point3i mUpper;
@@ -138,23 +158,4 @@ public final class SparseMatrix<T> {
         return mMatrix.size();
     }
 
-    public static long toHashCode(int x, int y, int z) {
-        byte[] buffer = new byte[8];
-        buffer[0] = 0;
-        ByteUtils.toBytes((short) x, buffer, 1);
-        ByteUtils.toBytes((short) y, buffer, 3);
-        ByteUtils.toBytes((short) z, buffer, 5);
-        buffer[7] = 1;
-        return ByteUtils.toLong(buffer);
-    }
-
-    public static Point3i fromHashCode(long hash) {
-        byte[] buffer = new byte[8];
-        ByteUtils.toBytes(hash, buffer);
-        short x = ByteUtils.toShort(buffer, 1);
-        short y = ByteUtils.toShort(buffer, 3);
-        short z = ByteUtils.toShort(buffer, 5);
-        Point3i p = new Point3i(x, y, z);
-        return p;
-    }
 }
