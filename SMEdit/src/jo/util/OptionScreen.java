@@ -67,15 +67,19 @@ public class OptionScreen extends JFrame {
     /* For tile properties dialog */
     private JButton jButton1;
     private JButton jButton2;
+    private JButton jButton3;
     private JComboBox jComboBox2;
     private JLabel jLabel1;
     private JLabel jLabel3;
     private JLabel jLabel4;
     private JLabel jLabel5;
     private JLabel jLabel6;
+    private JLabel jLabel7;
+    private JLabel jLabel8;
     private JPanel jPanel1;
     private JPanel jPanel2;
     private JPanel jPanel3;
+    private JPanel jPanel4;
     private JSpinner jSpinner1;
     private JTextField jTextField1;
     
@@ -94,6 +98,7 @@ public class OptionScreen extends JFrame {
 
             @Override
             public void windowClosing(final WindowEvent e) {
+                System.exit(0);
             }
         });
 
@@ -101,7 +106,7 @@ public class OptionScreen extends JFrame {
         setVisible(true);
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({"unchecked", "unchecked"})
     private void initComponents() {
 
         jPanel1 = new JPanel();
@@ -113,9 +118,12 @@ public class OptionScreen extends JFrame {
         jPanel3 = new JPanel();
         jLabel5 = new JLabel();
         jLabel6 = new JLabel();
-        jComboBox2 = new JComboBox();
+        jPanel4 = new JPanel();
+        jLabel7 = new JLabel();
+        jLabel8 = new JLabel();
         jButton1 = new JButton();
         jButton2 = new JButton();
+        jButton3 = new javax.swing.JButton();
 
         final ImageIcon icon = new ImageIcon();
         icon.setImage(GlobalConfiguration.getImage(Resources.SPLASH));
@@ -247,7 +255,7 @@ public class OptionScreen extends JFrame {
                         .addContainerGap(DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBorder(createTitledBorder("System Settings"));
+        jPanel2.setBorder(createTitledBorder("* System Settings *"));
 
         jLabel3.setText("Desired memory use in gigs?");
 
@@ -276,14 +284,14 @@ public class OptionScreen extends JFrame {
         jLabel4.setForeground(new Color(255, 0, 0));
         jLabel4.setText("Be Sure to set the preload options before you begin using SMEdit Classic");
 
-        jPanel3.setBorder(createTitledBorder("Folder Settings"));
+        jPanel3.setBorder(createTitledBorder("* Folder Settings *"));
 
         jLabel5.setText("Desired texture pack to use?");
 
         jLabel6.setText("StarMade game folder directory?");
 
-        //jComboBox2 = new JComboBox(new DefaultComboBoxModel(new String[]{"Cartoon", "OldStyle", "Pixel", "Realistic", "Custom"}));
-        jComboBox2 = new JComboBox(new DefaultComboBoxModel(new String[]{"Default", "Pixel", "Realistic"}));
+        //jComboBox2 = new JComboBox<>(new DefaultComboBoxModel<>(new String[]{"Cartoon", "OldStyle", "Pixel", "Realistic", "Custom"}));
+        jComboBox2 = new JComboBox<>(new DefaultComboBoxModel<>(new String[]{"Default", "Pixel", "Realistic"}));
         jComboBox2.setBorder(createEtchedBorder());
         if (null != mProps.getProperty("texture", "")) {
             switch (mProps.getProperty("texture", "")) {
@@ -335,6 +343,32 @@ public class OptionScreen extends JFrame {
                                 .addComponent(jLabel6, DEFAULT_SIZE, DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap(DEFAULT_SIZE, Short.MAX_VALUE))
         );
+        
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("* Start Up Instructions *"));
+
+        jLabel7.setText("Be sure to apply any changes before starting the main SMEdit app.");
+
+        jLabel8.setText("Pressing \"Cancel\" will close the starter app without starting SMEdit.");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         jButton1.setText("Apply");
         jButton1.addActionListener(new ActionListener() {
@@ -348,9 +382,18 @@ public class OptionScreen extends JFrame {
         jButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+        
+        jButton3.setText("Start SMEdit");
+        jButton3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 screen = new SMEdit(mArgs);
             }
         });
+        
 
         javax.swing.GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -363,14 +406,20 @@ public class OptionScreen extends JFrame {
                 .addComponent(jPanel3, DEFAULT_SIZE, DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(TRAILING, layout.createSequentialGroup()
                         .addContainerGap()
+                        
                         .addGroup(layout.createParallelGroup(LEADING)
-                                .addComponent(jLabel4, TRAILING, DEFAULT_SIZE, DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(TRAILING, layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(jButton1)
-                                        .addPreferredGap(RELATED)
-                                        .addComponent(jButton2)))
+                    .addComponent(jLabel4, TRAILING, DEFAULT_SIZE, DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(LEADING, false)
+                            .addComponent(jButton3, TRAILING, DEFAULT_SIZE, DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(TRAILING, layout.createSequentialGroup()
+                                .addComponent(jButton1)
+                                .addPreferredGap(RELATED)
+                                .addComponent(jButton2)))))
+
                         .addContainerGap())
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(LEADING)
@@ -383,9 +432,13 @@ public class OptionScreen extends JFrame {
                         .addPreferredGap(RELATED, DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel3, PREFERRED_SIZE, DEFAULT_SIZE, PREFERRED_SIZE)
                         .addPreferredGap(RELATED)
+                        .addComponent(jPanel4, PREFERRED_SIZE, DEFAULT_SIZE, PREFERRED_SIZE)
+                        .addPreferredGap(RELATED)
                         .addGroup(layout.createParallelGroup(BASELINE)
                                 .addComponent(jButton1)
                                 .addComponent(jButton2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton3)
                         .addGap(12, 12, 12))
         );
 
@@ -427,8 +480,7 @@ public class OptionScreen extends JFrame {
             }
         } catch (IOException e) {
 
-        }
-        screen = new SMEdit(mArgs);
+        }       
     }
 
     
