@@ -732,9 +732,9 @@ public class BlockTypeColors {
             File f = new File(
                     /* Change the commented out lines to change the game version to loaf textures */
                     /* 0.094 and below */
-                    StarMadeLogic.getInstance().getBaseDir(), "data/textures/block/t" + StringUtils.zeroPrefix(i, 3) + ".png");
+                    //StarMadeLogic.getInstance().getBaseDir(), "data/textures/block/t" + StringUtils.zeroPrefix(i, 3) + ".png");
                     /* 0.14 */
-                    //StarMadeLogic.getInstance().getBaseDir(), "data/textures/block/" + mProps.getProperty("texture", "") + "/64/t" + StringUtils.zeroPrefix(i, 3) + ".png");
+                    StarMadeLogic.getInstance().getBaseDir(), "data/textures/block/" + mProps.getProperty("texture", "") + "/64/t" + StringUtils.zeroPrefix(i, 3) + ".png");
 
             if (!f.exists()) {
                 break;
