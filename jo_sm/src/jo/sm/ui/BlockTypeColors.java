@@ -1,7 +1,6 @@
 /**
- * Copyright 2014 
- * SMEdit https://github.com/StarMade/SMEdit
- * SMTools https://github.com/StarMade/SMTools
+ * Copyright 2014 SMEdit https://github.com/StarMade/SMEdit SMTools
+ * https://github.com/StarMade/SMTools
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,7 +13,8 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations under
  * the License.
- **/
+ *
+ */
 package jo.sm.ui;
 
 import java.awt.Color;
@@ -640,7 +640,7 @@ public class BlockTypeColors {
     public static BufferedImage mAllTextures;
     public static Properties mBlockTypes;
     private static Properties mProps;
-    
+
     public static void loadProps() {
         File home = new File(System.getProperty("user.home"));
         File props = new File(home, ".josm");
@@ -730,8 +730,12 @@ public class BlockTypeColors {
         loadProps();
         for (int i = 0; i < 256; i++) {
             File f = new File(
-                    StarMadeLogic.getInstance().getBaseDir(),
-                    "data/textures/block/" + mProps.getProperty("texture", "") + "/64/t" + StringUtils.zeroPrefix(i, 3) + ".png");
+                    /* Change the commented out lines to change the game version to loaf textures */
+                    /* 0.094 and below */
+                    StarMadeLogic.getInstance().getBaseDir(), "data/textures/block/t" + StringUtils.zeroPrefix(i, 3) + ".png");
+                    /* 0.14 */
+                    //StarMadeLogic.getInstance().getBaseDir(), "data/textures/block/" + mProps.getProperty("texture", "") + "/64/t" + StringUtils.zeroPrefix(i, 3) + ".png");
+
             if (!f.exists()) {
                 break;
             }

@@ -24,6 +24,7 @@ import java.util.Map;
 import java.util.Set;
 
 import jo.sm.data.BlockTypes;
+import jo.sm.data.BooleanMatrix3D;
 import jo.sm.data.SparseMatrix;
 import jo.sm.mods.IPluginCallback;
 import jo.sm.ship.data.Block;
@@ -172,4 +173,102 @@ public class HullLogic {
         }
         return exterior;
     }
+
+    public static BooleanMatrix3D findExteriorMatrix(SparseMatrix<Block> grid, IPluginCallback cb) {
+        Point3i lower = new Point3i();
+        Point3i upper = new Point3i();
+        grid.getBounds(lower, upper);
+        if (cb != null) {
+            cb.setStatus("Calculating exterior");
+            cb.startTask((upper.x - lower.x + 3) * (upper.y - lower.y + 3)
+                    + (upper.x - lower.x + 3) * (upper.z - lower.z + 3)
+                    + (upper.z - lower.z + 3) * (upper.y - lower.y + 3)
+            );
+        }
+        BooleanMatrix3D exterior = new BooleanMatrix3D();
+        Point3i p = new Point3i();
+        // do z
+        for (p.x = lower.x - 1; p.x <= upper.x + 1; p.x++) {
+            for (p.y = lower.y - 1; p.y <= upper.y + 1; p.y++) {
+                if (cb != null) {
+                    cb.workTask(1);
+                }
+                // lower to upper
+                for (p.z = lower.z; p.z <= upper.z + 1; p.z++) {
+                    if (grid.contains(p)) {
+                        break;
+                    } else {
+                        exterior.set(p);
+                    }
+                }
+                if (p.z < upper.z) // upper to lower
+                {
+                    for (p.z = upper.z + 1; p.z >= lower.z; p.z--) {
+                        if (grid.contains(p)) {
+                            break;
+                        } else {
+                            exterior.set(p);
+                        }
+                    }
+                }
+            }
+        }
+        // do y
+        for (p.x = lower.x - 1; p.x <= upper.x; p.x++) {
+            for (p.z = lower.z - 1; p.z <= upper.z; p.z++) {
+                if (cb != null) {
+                    cb.workTask(1);
+                }
+                // lower to upper
+                for (p.y = lower.y; p.y <= upper.y; p.y++) {
+                    if (grid.contains(p)) {
+                        break;
+                    } else {
+                        exterior.set(p);
+                    }
+                }
+                if (p.y < upper.y) // upper to lower
+                {
+                    for (p.y = upper.y; p.y >= lower.y; p.y--) {
+                        if (grid.contains(p)) {
+                            break;
+                        } else {
+                            exterior.set(p);
+                        }
+                    }
+                }
+            }
+        }
+        // do x
+        for (p.y = lower.y - 1; p.y <= upper.y; p.y++) {
+            for (p.z = lower.z - 1; p.z <= upper.z; p.z++) {
+                if (cb != null) {
+                    cb.workTask(1);
+                }
+                // lower to upper
+                for (p.x = lower.x; p.x <= upper.x; p.x++) {
+                    if (grid.contains(p)) {
+                        break;
+                    } else {
+                        exterior.set(p);
+                    }
+                }
+                if (p.x < upper.x) // upper to lower
+                {
+                    for (p.x = upper.x; p.x >= lower.x; p.x--) {
+                        if (grid.contains(p)) {
+                            break;
+                        } else {
+                            exterior.set(p);
+                        }
+                    }
+                }
+            }
+        }
+        if (cb != null) {
+            cb.endTask();
+        }
+        return exterior;
+    }
 }
+

@@ -18,9 +18,9 @@
 package jo.sm.ship.logic;
 
 import java.util.Iterator;
-import java.util.Set;
 
 import jo.sm.data.BlockTypes;
+import jo.sm.data.BooleanMatrix3D;
 import jo.sm.data.CubeIterator;
 import jo.sm.data.RenderTile;
 import jo.sm.data.SparseMatrix;
@@ -51,7 +51,8 @@ public class SmoothLogic {
         new Point3i(0, 0, -1),};
 
     public static void smooth(SparseMatrix<Block> grid, int scope, int type, StarMade sm, IPluginCallback cb) {
-        Set<Point3i> exterior = HullLogic.findExterior(grid, cb);
+        //Set<Point3i> exterior = HullLogic.findExterior(grid, cb);
+        BooleanMatrix3D exterior = HullLogic.findExteriorMatrix(grid, cb);
         boolean[] edges = new boolean[6];
         cb.setStatus("Smoothing");
         Point3i lower = new Point3i();
@@ -376,3 +377,4 @@ public class SmoothLogic {
         return BlockTypes.isHull(type) || BlockTypes.isPowerHull(type) || (type == BlockTypes.GLASS_ID);
     }
 }
+

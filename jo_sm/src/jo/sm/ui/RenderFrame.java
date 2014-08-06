@@ -1,7 +1,7 @@
 /**
- * Copyright 2014 
- * SMEdit https://github.com/StarMade/SMEdit
- * SMTools https://github.com/StarMade/SMTools
+ * Copyright 2014 SMEdit 
+ * https://github.com/StarMade/SMEdit SMTools
+ * https://github.com/StarMade/SMTools
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,7 +14,8 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations under
  * the License.
- **/
+ *
+ */
 package jo.sm.ui;
 
 import java.awt.BorderLayout;
@@ -27,8 +28,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.File;
-import java.net.MalformedURLException;
 import java.util.List;
 import java.util.Properties;
 import java.util.logging.Level;
@@ -89,28 +88,74 @@ import jo.util.SplashScreen;
 public class RenderFrame extends JFrame {
 
     private static final Logger log = Logger.getLogger(RenderFrame.class.getName());
+    private static final String os = System.getProperty("os.name").toLowerCase();
     private static String[] mArgs;
     private static boolean debugLogging = true;
 
+    public static void preLoad() {
+        Properties props = StarMadeLogic.getProps();
+        String home = props.getProperty("starmade.home", "");
+        if (!StarMadeLogic.isStarMadeDirectory(home)) {
+            home = System.getProperty("user.dir");
+            if (!StarMadeLogic.isStarMadeDirectory(home)) {
+                home = JOptionPane.showInputDialog(null, "Enter in the home directory for StarMade", home);
+                if (home == null) {
+                    System.exit(0);
+                }
+            }
+            props.put("starmade.home", home);
+            StarMadeLogic.saveProps();
+        }
+        StarMadeLogic.setBaseDir(home);
+    }
+
     public static void main(String[] args) {
+        preLoad();
+        if (os.contains("windows")) {
+            SplashScreen splash = new SplashScreen(args);
+            if (!splash.error) {
+                startup(args);
+            }
+            splash.close();
+        } else if (os.contains("mac")) {
+            startup(args);
+        } else if (os.contains("linux")) {
+            startup(args);
+
+        }
+    }
+
+    /**
+     * Returns the startup run objects for app startup
+     * only (not useful for script writers).
+     *
+     * @param args
+     * the first loaded ship for the client
+     */
+    public static void startup(String[] args) {
         final RenderFrame f = new RenderFrame(args);
         f.setVisible(true);
-            try {
-                final ShipSpec spec = ShipTreeLogic.getBlueprintSpec("Omen-Navy-Class", true);
-                if (spec != null) {
-                    IRunnableWithProgress t = new IRunnableWithProgress() {
-                        @Override
-                        public void run(IPluginCallback cb) {
-                            StarMadeLogic.getInstance().setCurrentModel(spec);
-                            StarMadeLogic.setModel(ShipTreeLogic.loadShip(spec, cb));
-                        }
-                    };
-                    log.log(Level.INFO, "Loading Ship!");
-                    RunnableLogic.run(f, "", t);
-                }
-            } catch (Exception e) {
-                log.log(Level.WARNING, "Ship load failed!", e);
+        try {
+            /*Chenage the commented line to change the default loaded blueprint*/
+            /*method updated as of SMEdit v1.06*/
+            final ShipSpec spec = ShipTreeLogic.getBlueprintSpec("Omen-Navy-Class", true);
+            //final ShipSpec spec = ShipTreeLogic.getBlueprintSpec("Isanth-VI", true);
+            if (spec != null) {
+                IRunnableWithProgress t = new IRunnableWithProgress() {
+                    @Override
+                    public void run(IPluginCallback cb) {
+                        StarMadeLogic.getInstance().setCurrentModel(spec);
+                        StarMadeLogic.setModel(ShipTreeLogic.loadShip(spec, cb));
+                    }
+                };
+                log.log(Level.INFO, "Loading Ship!");
+                RunnableLogic.run(f, "Loading...", t);
+            } else {
+                log.log(Level.WARNING, "Could not find the ship your asking to load!");
             }
+        } catch (Exception e) {
+            log.log(Level.WARNING, "Ship load failed!", e);
+        }
         log.config("Main application started: " + GlobalConfiguration.NAME);
     }
 
@@ -175,10 +220,10 @@ public class RenderFrame extends JFrame {
         main.add(new EditPanel(getClient(), this), BorderLayout.WEST);
         main.add(getClient(), BorderLayout.CENTER);
         textScroll = new JScrollPane(TextAreaLogHandler.TEXT_AREA,
-				JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
-				JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-	textScroll.setBorder(null);
-	textScroll.setVisible(true);
+                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
+                JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        textScroll.setBorder(null);
+        textScroll.setVisible(true);
         ClientWindows = new JTabbedPane();
         ClientWindows.setFont(new Font("Futura Md BT", 0, 10));
         ClientWindows.addTab("Edit Window", main);

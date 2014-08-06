@@ -26,6 +26,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import jo.sm.data.BlockTypes;
+import jo.sm.data.BooleanMatrix3D;
 import jo.sm.data.SparseMatrix;
 import jo.sm.data.StarMade;
 import jo.sm.mods.IBlocksPlugin;
@@ -75,7 +76,7 @@ public class FillPlugin implements IBlocksPlugin {
         modified.set(p, b);
     }
 
-    public static void scopeInterior(SparseMatrix<Block> original, SparseMatrix<Block> modified, List<Point3i> interior, Set<Point3i> exterior, Point3i lower, Point3i upper, IPluginCallback cb) {
+    public static void scopeInterior(SparseMatrix<Block> original, SparseMatrix<Block> modified, List<Point3i> interior, BooleanMatrix3D exterior, Point3i lower, Point3i upper, IPluginCallback cb) {
         cb.setStatus("Calculating interior");
         cb.startTask(original.size());
         for (Iterator<Point3i> i = original.iterator(); i.hasNext();) {
@@ -140,7 +141,8 @@ public class FillPlugin implements IBlocksPlugin {
         FillParameters params = (FillParameters) p;
         SparseMatrix<Block> modified = new SparseMatrix<>();
         List<Point3i> interior = new ArrayList<>();
-        Set<Point3i> exterior = HullLogic.findExterior(original, cb);
+        //Set<Point3i> exterior = HullLogic.findExterior(original, cb);
+        BooleanMatrix3D exterior = HullLogic.findExteriorMatrix(original, cb);
         Point3i lower = new Point3i();
         Point3i upper = new Point3i();
         original.getBounds(lower, upper);

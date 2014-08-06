@@ -1,7 +1,6 @@
 /**
- * Copyright 2014 
- * SMEdit https://github.com/StarMade/SMEdit
- * SMTools https://github.com/StarMade/SMTools
+ * Copyright 2014 SMEdit https://github.com/StarMade/SMEdit SMTools
+ * https://github.com/StarMade/SMTools
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,7 +13,8 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations under
  * the License.
- **/
+ *
+ */
 package jo.util;
 
 import java.awt.BorderLayout;
@@ -23,19 +23,21 @@ import java.awt.Font;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.PrintStream;
+import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import static javax.swing.BorderFactory.createTitledBorder;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JProgressBar;
 import static javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE;
 
 import jo.log.LabelLogHandler;
 import jo.log.LogOutputStream;
 import jo.log.SystemConsoleHandler;
-
+import jo.sm.logic.StarMadeLogic;
 
 /**
  * This is the main splash or load screen for the app. It handles the start up
@@ -69,8 +71,8 @@ public class SplashScreen extends JDialog {
         }
     }
 
-
     private final String[] args;
+    public final boolean error;
 
     public SplashScreen(final String[] args) {
         instance = this;
@@ -114,19 +116,27 @@ public class SplashScreen extends JDialog {
             Thread.sleep(300);
         } catch (InterruptedException | SecurityException exc) {
         }
+        String err = null;
         try {
-
             log.info("Starting Bootstrap");
             bootstrap();
             Thread.sleep(300);
         } catch (InterruptedException exc) {
         }
-        try {
-            log.info("Loading Application");
-            GlobalConfiguration.registerLogging();
-            Logger.getLogger("").removeHandler(handler);
-            Thread.sleep(300);
-        } catch (InterruptedException | SecurityException exc) {
+        if (err == null) {
+            this.error = false;
+            try {
+                log.info("Loading Application");
+                GlobalConfiguration.registerLogging();
+                Logger.getLogger("").removeHandler(handler);
+                Thread.sleep(300);
+
+            } catch (InterruptedException | SecurityException exc) {
+            }
+        } else {
+            this.error = true;
+            progress.setIndeterminate(false);
+            log.severe(err);
         }
 
     }

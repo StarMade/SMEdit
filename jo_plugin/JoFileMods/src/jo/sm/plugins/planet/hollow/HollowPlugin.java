@@ -21,6 +21,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import jo.sm.data.BlockTypes;
+import jo.sm.data.BooleanMatrix3D;
 import jo.sm.data.SparseMatrix;
 import jo.sm.data.StarMade;
 import jo.sm.mods.IBlocksPlugin;
@@ -85,8 +86,9 @@ public class HollowPlugin implements IBlocksPlugin {
     }
 
     public static void doHollow(SparseMatrix<Block> grid, IPluginCallback cb) {
-        Set<Point3i> exterior;
-        exterior = HullLogic.findExterior(grid, cb);
+        //Set<Point3i> exterior;
+        //exterior = HullLogic.findExterior(grid, cb);
+        BooleanMatrix3D exterior = HullLogic.findExteriorMatrix(grid, cb);
         for (Iterator<Point3i> i = grid.iteratorNonNull(); i.hasNext();) {
             Point3i xyz;
             xyz = i.next();
@@ -102,7 +104,7 @@ public class HollowPlugin implements IBlocksPlugin {
         }
     }
 
-    private static boolean isEdge(Set<Point3i> exterior, Point3i xyz) {
+    private static boolean isEdge(BooleanMatrix3D exterior, Point3i xyz) {
         if (exterior.contains(new Point3i(xyz.x - 1, xyz.y, xyz.z))) {
             return true;
         }

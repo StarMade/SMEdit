@@ -24,6 +24,7 @@ import java.util.List;
 import java.util.Set;
 
 import jo.sm.data.BlockTypes;
+import jo.sm.data.BooleanMatrix3D;
 import jo.sm.data.CubeIterator;
 import jo.sm.data.SparseMatrix;
 import jo.sm.data.StarMade;
@@ -191,8 +192,9 @@ public class DeckPlugin implements IBlocksPlugin {
                 }
             }
         } else {
-            Set<Point3i> exterior;
-            exterior = HullLogic.findExterior(original, cb);
+            BooleanMatrix3D exterior = HullLogic.findExteriorMatrix(original, cb);
+            //Set<Point3i> exterior;
+            //exterior = HullLogic.findExterior(original, cb);
             original.getBounds(lower, upper);
             scopeInterior(modified, interior, exterior, lower, upper, cb);
         }
@@ -232,7 +234,7 @@ public class DeckPlugin implements IBlocksPlugin {
     }
 
     private void scopeInterior(SparseMatrix<Block> grid, List<Point3i> interior,
-            Set<Point3i> exterior, Point3i lower, Point3i upper,
+            BooleanMatrix3D exterior, Point3i lower, Point3i upper,
             IPluginCallback cb) {
         cb.setStatus("Calculating interior");
         cb.startTask(grid.size());

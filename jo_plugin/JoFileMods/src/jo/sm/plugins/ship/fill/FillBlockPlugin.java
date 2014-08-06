@@ -20,6 +20,7 @@ package jo.sm.plugins.ship.fill;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import jo.sm.data.BooleanMatrix3D;
 
 import jo.sm.data.SparseMatrix;
 import jo.sm.data.StarMade;
@@ -82,8 +83,9 @@ public class FillBlockPlugin implements IBlocksPlugin {
         modified = new SparseMatrix<>();
         List<Point3i> interior;
         interior = new ArrayList<>();
-        Set<Point3i> exterior;
-        exterior = HullLogic.findExterior(original, cb);
+        BooleanMatrix3D exterior = HullLogic.findExteriorMatrix(original, cb);
+        //Set<Point3i> exterior;
+        //exterior = HullLogic.findExterior(original, cb);
         Point3i lower;
         lower = new Point3i();
         Point3i upper;

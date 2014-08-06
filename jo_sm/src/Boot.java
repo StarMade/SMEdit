@@ -1,7 +1,7 @@
 /**
- * Copyright 2014 
- * SMEdit https://github.com/StarMade/SMEdit
- * SMTools https://github.com/StarMade/SMTools
+ * Copyright 2014 SMEdit
+ * https://github.com/StarMade/SMEdit SMTools
+ * https://github.com/StarMade/SMTools
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,7 +14,9 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations under
  * the License.
- **/
+ *
+ */
+
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -53,10 +55,15 @@ public class Boot {
 
         if (os.contains("windows")) {
             Runtime.getRuntime().exec("javaw " + flags + " -classpath \""
-                    + location + "\" Application");
+                    + location + "\" jo.sm.ui.RenderFrame");
+        } else if (os.contains("mac")) {
+            Runtime.getRuntime().exec(new String[]{"/bin/sh",
+                "-c", "java " + flags + " -Xdock:name=\"SMEdit\""
+                + " -Xdock:icon=resources/images/icon.png"
+                + " -classpath \"" + location + "\" jo.sm.ui.RenderFrame"});
         } else {
             Runtime.getRuntime().exec(new String[]{"/bin/sh",
-                "-c", "java " + flags + " -classpath \"" + location + "\" Application"});
+                "-c", "java " + flags + " -classpath \"" + location + "\" jo.sm.ui.RenderFramen"});
         }
 
     }
