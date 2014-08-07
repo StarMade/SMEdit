@@ -296,7 +296,7 @@ public class OptionScreen extends JFrame {
         if (null != mProps.getProperty("texture", "")) {
             switch (mProps.getProperty("texture", "")) {
                 case "Default":
-                    jComboBox2.setSelectedIndex(0);
+                    jComboBox2.setSelectedIndex(1);
                     break;
                 case "Pixel":
                     jComboBox2.setSelectedIndex(2);
@@ -304,12 +304,7 @@ public class OptionScreen extends JFrame {
                 case "Realistic":
                     jComboBox2.setSelectedIndex(3);
                     break;
-                case "Custom":
-                    jComboBox2.setSelectedIndex(4);
-                    break;
             }
-        } else {
-            jComboBox2.setSelectedIndex(1);
         }
 
         jTextField1 = new JTextField(mProps.getProperty("starmade.home", ""));
