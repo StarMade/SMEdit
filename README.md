@@ -1,10 +1,12 @@
 SMEdit
 ======
-version 1.3.67
-# Started github code base.
-# expanded application log system. 
-# Added log tab to the main pane.
 
-======
+Notes:
+* Using Oracle JDK V1.8
+* Primarily Tested on Kubuntu 15.04
 
-Brand new re-coded SMEdit.
+
+Forked to play around with.
+
+
+

@@ -296,13 +296,13 @@ public class OptionScreen extends JFrame {
         if (null != mProps.getProperty("texture", "")) {
             switch (mProps.getProperty("texture", "")) {
                 case "Default":
-                    jComboBox2.setSelectedIndex(1);
+                    jComboBox2.setSelectedIndex(0);
                     break;
                 case "Pixel":
-                    jComboBox2.setSelectedIndex(2);
+                    jComboBox2.setSelectedIndex(1);
                     break;
                 case "Realistic":
-                    jComboBox2.setSelectedIndex(3);
+                    jComboBox2.setSelectedIndex(2);
                     break;
             }
         }

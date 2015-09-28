@@ -64,6 +64,7 @@ public class SMEdit extends JFrame {
         mArgs = args;
         mOptionDir = new File(Paths.getHomeDirectory());
         File jo_smJar = new File(mOptionDir, "jo_sm.jar");
+        
         if (!jo_smJar.exists()) {
             for (final Map.Entry<String, File> item : getDownloadCaches().entrySet()) {
                 try {
