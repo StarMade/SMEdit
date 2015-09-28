@@ -63,7 +63,7 @@ public class Boot {
                 + " -classpath \"" + location + "\" jo.sm.ui.RenderFrame"});
         } else {
             Runtime.getRuntime().exec(new String[]{"/bin/sh",
-                "-c", "java " + flags + " -classpath \"" + location + "\" jo.sm.ui.RenderFramen"});
+                "-c", "java " + flags + " -classpath \"" + location + "\" jo.sm.ui.RenderFrame"});
         }
 
     }
